@@ -1,0 +1,47 @@
+.product-card {
+    margin: 0 1rem 1rem 0;
+    padding-left: 1rem;
+    box-shadow: 3px 4px 6px gray;
+    border-radius: 0 10px 10px 0;
+}
+
+.product-card > img,
+.lazyload-wrapper > img  {
+    height: 5rem;
+}
+
+.product-details{
+    flex-grow: 1;
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.product-name-price{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    line-height: 1.2;
+    margin: .25rem 0;
+}
+
+.product-price {
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.025em;
+    white-space: nowrap;
+}
+.product-ingredients {
+    font-size: .7em;
+    color: gray;
+}
+
+
+.ration-card {
+    margin: 0 1rem 1rem 0;
+    padding-left: 1rem;
+    box-shadow: 3px 4px 6px gray;
+    border-radius: 0 10px 10px 0;
+}
+
+.ration-details{
+    padding: .5rem;
+}
+
