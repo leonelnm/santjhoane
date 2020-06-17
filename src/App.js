@@ -26,9 +26,10 @@ export default function App() {
     return (
         <Fragment>
             <Header />
-            <div id="home">
-                <LazyLoad placeholder={<p>Cargando card...</p>}>
+            <div id="home" className="cards">
+                <LazyLoad placeholder={<p>Loading...</p>}>
                     <h2>Lunes a Viernes</h2>
+                    <div className="grid-products">
                     {products.map((product, i) => (
                         <LazyLoad key={'lazy-product' + i} placeholder={<p>Loading...</p>}>
                             <ProductCard key={'product' + i}
@@ -42,11 +43,13 @@ export default function App() {
                         </LazyLoad>
 
                     ))}
+                    </div>
                 </LazyLoad>
             </div>
-            <div id="weekend">
+            <div id="weekend" className="cards">
                 <LazyLoad placeholder={<p>Loading...</p>}>
                     <h2>Fin de Semana y Festivos</h2>
+                    <div className="grid-products">
                     {productsWeekend.map((product, i) => (
                         <LazyLoad key={'lazy-weekend' + i} placeholder={<p>Loading...</p>}>
                             <ProductCard key={'weekend' + i}
@@ -60,11 +63,13 @@ export default function App() {
                         </LazyLoad>
 
                     ))}
+                    </div>
                 </LazyLoad>
             </div>
-            <div id="ration">
+            <div id="ration" className="cards">
                 <LazyLoad placeholder={<p>Loading...</p>}>
                     <h2>Raciones</h2>
+                    <div className="grid-products">
                     {porciones.map((product, i) => (
                         <LazyLoad key={'lazy-ration' + i} placeholder={<p>Loading...</p>}>
                             <RationCard key={'ration' + i}
@@ -73,6 +78,7 @@ export default function App() {
                             />
                         </LazyLoad>
                     ))}
+                    </div>
                 </LazyLoad>
             </div>
 

@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 export default function Header(){
 
     return (
-        <header>
+        <header className="fullbackgroundcontent">
             <div className="row header">
                 <img src={logo} alt="logo" className="logo"></img>
             </div>

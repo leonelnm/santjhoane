@@ -36,10 +36,4 @@ function orderObjectByname(items) {
     return items;
 }
 
-function errData(err) {
-    console.log('Error!');
-    console.log(err);
-}
-
-
 export { convertJsonToState }
