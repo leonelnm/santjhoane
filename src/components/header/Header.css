@@ -10,12 +10,15 @@
 .navbar {
   font-size: 0.8em;
   margin: 0.5rem 0;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background-color: #333;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -37,6 +40,11 @@
   background-color: #4caf50;
   color: white;
 }
+
+.firstOrder{
+  order: -1;
+}
+
 
 .content {
   padding: 16px;
