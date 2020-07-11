@@ -7,7 +7,7 @@ import { orderObjectByname } from '../firebase/helperFirebase'
 export const DrinksScreen = ({ drinks, loading }) => {
 
     const [state] = useState(
-        orderObjectByname(drinks.filter(item => item.categories.includes('bebida')))
+        orderObjectByname(drinks)
     )
 
     return (
