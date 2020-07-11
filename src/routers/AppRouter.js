@@ -1,7 +1,7 @@
 import React from 'react'
 import {
 	BrowserRouter as Router,
-	Switch, Route, Redirect
+	Switch, Route, Redirect, HashRouter
 } from "react-router-dom";
 import { WeekendScreen } from '../components/WeekendScreen';
 import { RationsScreen } from '../components/RationsScreen';
@@ -17,13 +17,13 @@ import { useDrinksFirebaseData } from '../hooks/useDrinksFirebaseData';
 export const AppRouter = () => {
 
 	// const redirectByHour = new Date().getHours() < 12 ? "breakfast" : "dishes";
-	const redirectByHour = "/";
+	let redirectByHour = "/";
 
 	const { data: products, loading } = useProductsFirebaseData();
 	const { data: drinks, loading: loadingDrink } = useDrinksFirebaseData();
 
 	return (
-		<Router>
+		<HashRouter>
 			<Header />
 			<div>
 				<Switch>
@@ -39,6 +39,6 @@ export const AppRouter = () => {
 				</Switch>
 			</div>
 			<Footer />
-		</Router>
+		</HashRouter>
 	)
 }

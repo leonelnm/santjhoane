@@ -28,7 +28,7 @@ export default function Navbar() {
 
     return (
         <nav className={navbarClasses.join(" ")} id="navbar">
-            <Link to="/dishes">Platos Combinados</Link>
+            <Link to="/">Platos Combinados</Link>
             <Link to="/weekend">Fin de Semana</Link>
             <Link to="/entrees">Comida Rápida</Link>
             <Link to="/rations">Porciones</Link>
