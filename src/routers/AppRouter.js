@@ -35,7 +35,7 @@ export const AppRouter = () => {
 					{/* <Route exact path="/breakfast" component={BreakFastScreen} /> */}
 					<Route exact path="/entrees" component={() => <FastFoodScreen products={products} loading={loading} />} />
 
-					<Redirect to={`/${redirectByHour}`} />
+					<Redirect to={"/dishes"} />
 				</Switch>
 			</div>
 			<Footer />
