@@ -4,18 +4,18 @@ import ProductCard from './productCard/ProductCard';
 import { orderObjectByname } from '../firebase/helperFirebase';
 import { Loading } from './loading/Loading';
 
-export const WeekendScreen = ({ products, loading }) => {
+export const DishesScreen = ({ products, loading }) => {
 
     const [state] = useState(
         orderObjectByname(products.filter(item => item.img)
-            .filter(item => item.categories.includes('weekend'))))
+            .filter(item => !item.categories.includes('weekend'))))
 
     return (
         <>
             {loading ? <Loading/> :
-                <div id="weekend" className="cards">
+                <div id="dishes" className="cards">
                     <LazyLoad placeholder={<p>Loading...</p>}>
-                        <h2>Fin de Semana y Festivos</h2>
+                        <h2>Todos los Días</h2>
                         <div className="grid-products">
                             {state.map((product, i) => (
                                 <LazyLoad key={'lazy-weekend' + i} placeholder={<p>Loading...</p>}>
