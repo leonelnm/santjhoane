@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import { SantJhoane } from './SantJhoane';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <SantJhoane />,
+  <HashRouter>
+    <SantJhoane />
+  </HashRouter>,
   document.getElementById('root')
 );
 
