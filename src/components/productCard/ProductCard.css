@@ -12,8 +12,7 @@ h2 {
     border-radius: 0 10px 10px 0;
 }
 
-.product-card > img,
-.lazyload-wrapper > img  {
+.product-card > .lazyload-wrapper > img  {
     height: 5rem;
 }
 
@@ -40,7 +39,6 @@ h2 {
     color: gray;
 }
 
-
 .ration-card {
     margin: 0 1rem 1rem 0;
     padding-left: 1rem;
@@ -52,3 +50,44 @@ h2 {
     padding: .5rem;
 }
 
+.breakfast-card {
+    box-shadow: 3px 4px 6px gray;
+    border-radius: 10px;
+    height: 100%;
+    padding-bottom: .5rem;
+}
+
+.breakfast-card > .lazyload-wrapper > img {
+    height: 8rem;
+}
+
+.breakfast-details {
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.breakfast-name-price {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    line-height: 1.2;
+    margin: .25rem 0;
+}
+
+.breakfast-name-price > p {
+    text-align: center;
+    font-size: .9em;
+}
+
+.breakfast-price {
+    margin-top: .5rem;
+    font-size: 1.025em;
+    font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.breakfast-ingredients{
+    color: gray;
+    font-size: .7em;
+    margin-top: .5rem;
+    text-align: center;
+}

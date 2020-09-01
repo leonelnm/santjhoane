@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 
-    // const firsOptionByHours = new Date().getHours() < 12 ? "firstOrder" : "";
+    const firsOptionByHours = new Date().getHours() < 12 ? "firstOrder" : "";
 
     // navbar Sticky
     const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link to="/entrees">Comida Rápida</Link>
             <Link to="/rations">Porciones</Link>
             <Link to="/drinks">Bebidas</Link>
-            {/* <Link className={firsOptionByHours} to="/breakfast">Desayunos</Link> */}
+            <Link className={firsOptionByHours} to="/breakfast">Desayunos</Link>
         </nav>
     )
 }

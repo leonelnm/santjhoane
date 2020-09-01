@@ -27,10 +27,28 @@ code {
   align-items: center;
 }
 
+.column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-breakfast{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem
+}
+
 @media (min-width: 1024px) {
   .grid-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-breakfast{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .cards {
