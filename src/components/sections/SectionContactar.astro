@@ -1,0 +1,39 @@
+---
+import Section from "../../layouts/Section.astro";
+import Location from "../Location.astro";
+import BotonLlamar from "../actions/BotonLlamar.astro";
+import BotonLlegar from "../actions/BotonLlegar.astro";
+---
+
+<Section title="Contactar">
+  <Location />
+
+  <article>
+    <h3>Contacto</h3>
+    <p>960 15 12 65</p>
+    <BotonLlamar />
+  </article>
+
+  <article>
+    <h3>Dirección</h3>
+    <BotonLlegar background />
+    <p>Carrer dels Sapadors, 45</p>
+    <p>46006 Valencia, Valencia</p>
+    <p>España</p>
+  </article>
+
+  <article>
+    <h3>Horario de apertura</h3>
+    <table>
+      <tbody>
+        <tr><th class="pr-4 text-left">lun:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">mar:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">mié:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">jue:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">vie:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">sáb:</th><td>09:00-21:15</td></tr>
+        <tr><th class="pr-4 text-left">dom:</th><td>09:00-20:00</td></tr>
+      </tbody>
+    </table>
+  </article>
+</Section>

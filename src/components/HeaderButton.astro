@@ -1,0 +1,20 @@
+---
+interface Props {
+  target?: "_blank";
+  url: string;
+  class?: string;
+}
+
+const { target, url, class: clazz } = Astro.props;
+---
+
+<a
+  target={target}
+  href={url}
+  type="button"
+  class={`font-bold inline-flex items-center rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${clazz}`}
+>
+  <slot />
+</a>
+
+<!-- class="font-bold inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" -->
