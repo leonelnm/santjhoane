@@ -12,6 +12,7 @@ import platos from "./mejoresPlatos";
           <div class="h-48 bg-amber-200 flex items-center justify-center">
             {/* <span class="text-amber-800 text-xl">Imagen de {dish}</span> */}
             <img
+              loading="lazy"
               src={dish.imagen}
               alt={`Imagen de ${dish.nombre}`}
               class="h-full w-full object-cover"
