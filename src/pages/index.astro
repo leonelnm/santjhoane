@@ -1,30 +1,22 @@
 ---
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
+// import Hero from "../components/Hero.astro";
+import MejoresPlatos from "../components/MejoresPlatos/MejoresPlatos.astro";
+import Horario from "../components/Horario.astro";
 import Layout from "../layouts/Layout.astro";
+import HeroVideo from "../components/HeroVideo.astro";
 ---
 
-<Layout title="Restaurante Sant Jhoane">
-  <main>
-    <h1>Ups! ¡Estamos trabajando en ello!</h1>
-    <article>
-      <p>
-        Disculpa las molestias, estamos actualizando nuestra página web.
-        Estaremos de vuelta en breve.
-      </p>
-      <p><b>— Restaurante Sant Jhoan'e</b></p>
-    </article>
+<Layout title="Restaurante Sant Jhoane - Auténtica Cocina Ecuatoriana">
+  <main class="min-h-screen bg-[#FDF6E3]">
+    <!-- <Hero /> -->
+    <HeroVideo />
+    <div class="max-w-4xl mx-auto">
+      <MejoresPlatos />
+      <Contacto />
+      <Horario />
+    </div>
+    <Footer />
   </main>
 </Layout>
-
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    margin: 2rem;
-  }
-  article {
-    max-width: 650px;
-  }
-</style>

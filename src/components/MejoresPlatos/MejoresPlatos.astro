@@ -1,0 +1,30 @@
+---
+import Title from "../ui/Title.astro";
+import platos from "./mejoresPlatos";
+---
+
+<section class="pt-16 px-4">
+  <Title text="Nuestros Platos Destacados" />
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {
+      platos.map((dish) => (
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="h-48 bg-amber-200 flex items-center justify-center">
+            {/* <span class="text-amber-800 text-xl">Imagen de {dish}</span> */}
+            <img
+              src={dish.imagen}
+              alt={`Imagen de ${dish.nombre}`}
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class={`text-xl font-semibold mb-2 text-amber-900`}>
+              {dish.nombre}
+            </h3>
+            <p class="text-amber-700">{dish.descripcion}</p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
