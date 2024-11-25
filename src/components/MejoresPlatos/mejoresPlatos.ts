@@ -8,17 +8,22 @@ const platos: Dish[] = [
   {
     nombre: "Encebollado",
     descripcion: "Delicioso plato tradicional ecuatoriano",
-    imagen: "/images/dish1.avif",
+    imagen: "/images/encebollado.webp",
   },
   {
     nombre: "Hornado",
     descripcion: "Delicioso plato tradicional ecuatoriano",
-    imagen: "/images/dish2.avif",
+    imagen: "/images/hornado.webp",
+  },
+  {
+    nombre: "Hornado con tortillas",
+    descripcion: "Delicioso plato tradicional ecuatoriano",
+    imagen: "/images/hornado-tortillas.webp",
   },
   {
     nombre: "Llapingachos",
     descripcion: "Delicioso plato tradicional ecuatoriano",
-    imagen: "/images/dish3.avif",
+    imagen: "/images/llapingacho.webp",
   },
 ];
 
