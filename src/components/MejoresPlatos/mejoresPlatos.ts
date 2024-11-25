@@ -7,7 +7,7 @@ interface Dish {
 const platos: Dish[] = [
   {
     nombre: "Encebollado",
-    descripcion: "Pescado, yuca, cebolla, tomate, cilantro, limón, chifles."
+    descripcion: "Pescado, yuca, cebolla, tomate, cilantro, limón, chifles.",
     imagen: "/images/encebollado.webp",
   },
   {
