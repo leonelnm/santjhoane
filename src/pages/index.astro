@@ -6,17 +6,19 @@ import MejoresPlatos from "../components/MejoresPlatos/MejoresPlatos.astro";
 import Horario from "../components/Horario.astro";
 import Layout from "../layouts/Layout.astro";
 import HeroVideo from "../components/HeroVideo.astro";
+import ContactoIcons from "../components/ContactoIcons.astro";
 ---
 
 <Layout title="Restaurante Sant Jhoane - Auténtica Cocina Ecuatoriana">
   <main class="min-h-screen bg-[#FDF6E3]">
     <!-- <Hero /> -->
     <HeroVideo />
-    <div class="max-w-4xl mx-auto">
-      <MejoresPlatos />
-      <Contacto />
-      <Horario />
-    </div>
+
+    <MejoresPlatos />
+    <!-- <Contacto /> -->
+    <ContactoIcons />
+    <Horario />
+
     <Footer />
   </main>
 </Layout>

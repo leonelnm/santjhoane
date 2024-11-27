@@ -1,0 +1,45 @@
+---
+import TitleIcon from "./ui/TitleIcon.astro";
+import Location from "../icons/Location.astro";
+import PhoneCall from "../icons/PhoneCall.astro";
+import Instagram from "../icons/instagram.astro";
+import Facebook from "../icons/Facebook.astro";
+---
+
+<section class="bg-[#78350f] mt-16">
+  <div class="py-16 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4 text-[#FDF6E3]">Contáctanos</h2>
+    <div class="mt-8 flex flex-col gap-5 text-white">
+      <a
+        href="https://maps.app.goo.gl/fPTwu5DGyFdq1csG7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <TitleIcon
+          title="Dónde estamos"
+          ,
+          description="Calle Sapadores, 45, Valencia"
+        >
+          <Location slot="icon" />
+        </TitleIcon>
+      </a>
+
+      <a href="tel:+34960151265">
+        <TitleIcon title="Contacto" description="+34 960 151 265">
+          <PhoneCall slot="icon" />
+        </TitleIcon>
+      </a>
+
+      <a href="https://www.instagram.com/restaurantesantjhoane" target="_blank">
+        <TitleIcon title="Instagram" description="@restaurantesantjhoane">
+          <Instagram slot="icon" />
+        </TitleIcon>
+      </a>
+      <a href="https://www.facebook.com/restaurantesantjoane" target="_blank">
+        <TitleIcon title="Facebook" description="@restaurantesantjhoane">
+          <Facebook slot="icon" />
+        </TitleIcon>
+      </a>
+    </div>
+  </div>
+</section>
