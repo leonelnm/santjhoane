@@ -3,19 +3,20 @@ import { ClientRouter } from "astro:transitions";
 
 interface Props {
 	title: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const descripcionDefault =
+	"Descubre Restaurante Sant Jhoan'e, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia.";
+
+const { title, description = descripcionDefault } = Astro.props as Props;
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="Descubre Restaurante Sant Jhoan'e, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia."
-		/>
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/webp" href="/favicon.webp" />
 		<link rel="sitemap" href="/sitemap-index.xml" />

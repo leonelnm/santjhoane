@@ -1,0 +1,13 @@
+---
+import { getPlatos } from "../api/platos";
+const platos = await getPlatos()
+
+---
+
+<h1>Menu</h1>
+{
+  platos.map((plato) => {
+    return <div>{plato.nombre}</div>
+  })
+}
+
