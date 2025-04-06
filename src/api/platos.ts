@@ -1,5 +1,19 @@
 import data from "./data.json"
 
+export const TipoPlatos: Map<TipoPlato, string> = new Map([
+  ['Desayuno', 'Desayunos'],
+  ['Entrantes', 'Entrantes'],
+  ['Combinados', 'Platos Combinados'],
+  ['Porción', 'Porciones'],
+  ['Sopas', 'Sopas'],
+  ['Bebida', 'Bebidas'],
+  ['Batidos', 'Batidos/Jugos'],
+  ['Postre', 'Postre'],
+  ['Café', 'Café'],
+])
+
+
+
 export const getAllPlatosAsMap = async (): Promise<MapPlato> => {
   const platos = await getAllPlatos()
   const platosMap: MapPlato = {} as MapPlato  

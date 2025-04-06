@@ -1,21 +1,22 @@
 ---
-import { getAllPlatos, getPlatosByTipo, getAllPlatosAsMap } from "../../api/platos";
+import { getAllPlatosAsMap, TipoPlatos } from "../../api/platos";
+import ButtonReturnTop from "./ButtonReturnTop.astro";
+import Filtro from "./Filtro.astro";
+import MenuSection from "./MenuSection.astro";
 
-const platos = await getAllPlatos();
-const bebidas = await getPlatosByTipo('Bebida');
 const platosMap = await getAllPlatosAsMap();
-
-console.log(platosMap);
-
-
 ---
 
-<h1>Menu</h1>
-<section>Bebidas</sectio>
-  {
-    bebidas.map(({nombre, precio, ingredientes}): Plato => (
-      <div>{nombre}</div>
-      <div>{ingredientes}</div>
-      <div>{precio}</div>
-    ))
-  }
+<div class="p-4">
+  <h1>Menu</h1>
+  <Filtro />
+  <div class="flex flex-col gap-4">
+    {
+      TipoPlatos.entries().map(([tipo, nombre]) => {
+        const platosTipo = platosMap[tipo];
+        return <MenuSection title={nombre} products={platosTipo} />;
+      })
+    }
+  </div>
+  <ButtonReturnTop />
+</div>
