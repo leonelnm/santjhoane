@@ -1,29 +1,21 @@
 ---
-import { getAllPlatos, getPlatosByTipo } from "../../api/platos-csv"
+import { getAllPlatos, getPlatosByTipo, getAllPlatosAsMap } from "../../api/platos";
 
-const platos = await getAllPlatos()
+const platos = await getAllPlatos();
+const bebidas = await getPlatosByTipo('Bebida');
+const platosMap = await getAllPlatosAsMap();
 
-const bebidas = await getPlatosByTipo("Bebida")
-const porciones = await getPlatosByTipo("Porción")
+console.log(platosMap);
+
 
 ---
 
 <h1>Menu</h1>
 <section>Bebidas</sectio>
-{
-  bebidas.map(({nombre, precio, ingredientes}): Plato => (
-    <div>{nombre}</div>
-    <div>{ingredientes}</div>
-    <div>{precio}</div>
-  ))
-}
-
-<section>Porciones</sectio>
   {
-    porciones.map(({nombre, precio, ingredientes}): Plato => (
+    bebidas.map(({nombre, precio, ingredientes}): Plato => (
       <div>{nombre}</div>
       <div>{ingredientes}</div>
       <div>{precio}</div>
     ))
   }
-

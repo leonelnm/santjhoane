@@ -1,0 +1,730 @@
+[
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Agua con Gas",
+    "Precio": "1,80€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Agua Pequeña",
+    "Precio": "1,60€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Americano",
+    "Precio": "1,20€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Apanado",
+    "Precio": "9,50€",
+    "Ingredientes": "Ternera apanada, arroz, patatas, ensalada, aguacate",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Aquarius (naranja - limón)",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno|Entrantes",
+    "Nombre": "Arepa con chorizo y queso",
+    "Precio": "7,00€",
+    "Ingredientes": "Arepa de maíz, chorizo, queso latino",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Arroz",
+    "Precio": "3,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Arroz con camarones",
+    "Precio": "14,50€",
+    "Ingredientes": "Arroz frito con camarones, verduras, maduro frito",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Bandeja paisa",
+    "Precio": "15,90€",
+    "Ingredientes": "Arroz, frijoles (menestra), huevo, chorizo, arepa, chicharrón (fritada), maduro, aguacate",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Bandera",
+    "Precio": "13,50€",
+    "Ingredientes": "Arroz, guatita, ceviche, ternera guisada",
+    "Días": "V|F"
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Bandera completa",
+    "Precio": "16,50€",
+    "Ingredientes": "Arroz, guatita, ceviche, ternera guisada, encebollado",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Bolón de verde con huevo frito",
+    "Precio": "5,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Bolón de verde con seco de carne y huevo frito",
+    "Precio": "9,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Bombón",
+    "Precio": "1,60€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Café con leche",
+    "Precio": "1,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Café cortado",
+    "Precio": "1,30€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Café solo",
+    "Precio": "1,10€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Sopas",
+    "Nombre": "Caldo de bola",
+    "Precio": "11,00€",
+    "Ingredientes": "Carne de ternera, bola de plátano verde, tuca, col, choclo, plátano verde",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Calentado de frijoles con carne",
+    "Precio": "7,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Calentado de frijoles con huevo frito",
+    "Precio": "5,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Entrantes",
+    "Nombre": "Camarones apanados",
+    "Precio": "13,50€",
+    "Ingredientes": "Camarones apanados, patatas fritas, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Carajillo de coñac",
+    "Precio": "1,40€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Amstel 1/3",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Coronita 1/3",
+    "Precio": "2,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Heineken 1/3",
+    "Precio": "2,20€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Pilsener",
+    "Precio": "",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Radler 1/3",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Cerveza Sin Alc",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Sopas",
+    "Nombre": "Ceviche",
+    "Precio": "10,00€",
+    "Ingredientes": "Gambas, tomate, cebolla, limón, chifles",
+    "Días": "V|F"
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Chaulafán (Arroz chino)",
+    "Precio": "14,50€",
+    "Ingredientes": "Ternera, lomo de cerdo, pollo, camarones, verduras, maduro",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Entrantes",
+    "Nombre": "Choclo con queso",
+    "Precio": "6,50€",
+    "Ingredientes": "Mazorca de maíz, queso latino",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Churrasco",
+    "Precio": "9,50€",
+    "Ingredientes": "Ternera a la plancha, arroz, patata, huevo frito, ensalada, aguacate",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Coca Cola 350ml",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Colacao",
+    "Precio": "1,80€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Copa de Vino (tinto - blanco)",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Dorada",
+    "Precio": "14,50€",
+    "Ingredientes": "Dorada frita, patacones, yuca, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Dorada con arroz",
+    "Precio": "14,50€",
+    "Ingredientes": "Dorada frita, patatas, arroz, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Dorada con menestra",
+    "Precio": "14,50€",
+    "Ingredientes": "Dorada frita, arroz, menestra, patacones",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Empanada",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Sopas",
+    "Nombre": "Encebollado",
+    "Precio": "10,00€",
+    "Ingredientes": "Pescado, yuca, cebolla, tomate, cilantro, limón, chifles",
+    "Días": "V|F"
+  },
+  {
+    "Tipo": "Sopas",
+    "Nombre": "Encebollado Mixto",
+    "Precio": "13,90€",
+    "Ingredientes": "Encebollado con ceviche de camarón",
+    "Días": "V|F"
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Ensalada",
+    "Precio": "3,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Ensalada Completa",
+    "Precio": "7,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Fanta",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Fritada",
+    "Precio": "11,50€",
+    "Ingredientes": "Carne de cerdo, mote, patata cocida, maduro frito, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Fritada completa",
+    "Precio": "16,90€",
+    "Ingredientes": "Carne de cerdo, mote, patata, queso, choclo, tostado, maduro frito, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Fritada con choclo",
+    "Precio": "10,00€",
+    "Ingredientes": "Fritada de cerdo, mazorca de maíz, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Guanabana",
+    "Precio": "5,50€",
+    "Ingredientes": "leche",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Guanabana",
+    "Precio": "5,00€",
+    "Ingredientes": "agua",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Guatita",
+    "Precio": "5,50€",
+    "Ingredientes": "",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Guiso de ternera",
+    "Precio": "6,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Postre",
+    "Nombre": "Helado (coco - mora - tres sabores)",
+    "Precio": "1,70€",
+    "Ingredientes": "coco - mora - tres sabores",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Hornado",
+    "Precio": "12,90€",
+    "Ingredientes": "Cerdo al horno, patata cocida, maduro, mote, ensalada",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Hornado con tortillas",
+    "Precio": "14,90€",
+    "Ingredientes": "Cerdo al horno, llapingachos, maduro, mote, ensalada, aguacate",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Humita",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Infusión",
+    "Precio": "1,40€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Llapingacho",
+    "Precio": "14,50€",
+    "Ingredientes": "Llapingachos, chorizo, ternera, salsa de maní, huevo frito, aguacate, ensalada",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Llapingacho",
+    "Precio": "5,00€",
+    "Ingredientes": "",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Maduro",
+    "Precio": "4,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes|Desayuno",
+    "Nombre": "Maduro con queso",
+    "Precio": "6,50€",
+    "Ingredientes": "Plátano maduro frito, queso latino",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Mango",
+    "Precio": "4,50€",
+    "Ingredientes": "leche",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Mango",
+    "Precio": "4,00€",
+    "Ingredientes": "agua",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con apanado",
+    "Precio": "9,50€",
+    "Ingredientes": "Ternera apanada, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con camarones apanados",
+    "Precio": "13,50€",
+    "Ingredientes": "Camarones apanados, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con carne",
+    "Precio": "9,50€",
+    "Ingredientes": "Ternera a la plancha, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con chorizo y huevos",
+    "Precio": "9,50€",
+    "Ingredientes": "Chorizo criollo, arroz, huevos fritos, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con fritada",
+    "Precio": "10,50€",
+    "Ingredientes": "Fritada, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con hornado",
+    "Precio": "11,00€",
+    "Ingredientes": "Hornado, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con lomo",
+    "Precio": "9,00€",
+    "Ingredientes": "Chuleta de cerdo, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Menestra",
+    "Nombre": "Menestra con pechuga",
+    "Precio": "9,00€",
+    "Ingredientes": "Pechuga a la plancha, arroz, patacones, menestra",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Menestra de frijoles",
+    "Precio": "5,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Café",
+    "Nombre": "Milo",
+    "Precio": "2,60€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Mora",
+    "Precio": "4,50€",
+    "Ingredientes": "leche",
+    "Días": ""
+  },
+  {
+    "Tipo": "Batidos",
+    "Nombre": "Mora",
+    "Precio": "4,00€",
+    "Ingredientes": "agua",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Mote",
+    "Precio": "5,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes",
+    "Nombre": "Mote con chicharrón",
+    "Precio": "7,50€",
+    "Ingredientes": "Chorizo criollo, mote, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Moto con chicharrón",
+    "Precio": "7,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Nestea/FuzeTea",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes|Desayuno",
+    "Nombre": "Papas con huevo",
+    "Precio": "4,90€",
+    "Ingredientes": "Patatas fritas, huevo frito, ketchup, mayonesa",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes|Desayuno",
+    "Nombre": "Papas con todo",
+    "Precio": "8,50€",
+    "Ingredientes": "Patatas fritas, salchichas, ternera, huevo frito, ketchup, mayonesa",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes|Desayuno",
+    "Nombre": "Papi carne",
+    "Precio": "6,50€",
+    "Ingredientes": "Patatas fritas, filete de ternera, ketchup, mayonesa",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes",
+    "Nombre": "Papi pollo",
+    "Precio": "6,50€",
+    "Ingredientes": "Patatas fritas, pechuga a la plancha, ketchup, mayonesa",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Patacón",
+    "Precio": "4,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes",
+    "Nombre": "Patacón con queso",
+    "Precio": "6,50€",
+    "Ingredientes": "Patacón de plátano verde, queso latino",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Patatas fritas",
+    "Precio": "4,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Entrantes",
+    "Nombre": "Picada",
+    "Precio": "15,50€",
+    "Ingredientes": "Chorizo blanco y rojo, yuca, carne de cerdo, alitas, maduro",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados|Entrantes",
+    "Nombre": "Plato combinado",
+    "Precio": "11,50€",
+    "Ingredientes": "Ternera, chicharrón, patacón, queso, ensalada",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Ponny Malta",
+    "Precio": "2,20€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Postobón (uva - manzana) peq",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Queso",
+    "Precio": "4,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Entrantes|Desayuno",
+    "Nombre": "Salchipapa",
+    "Precio": "4,90€",
+    "Ingredientes": "Patatas fritas, salchichas, ketchup, mayonesa",
+    "Días": ""
+  },
+  {
+    "Tipo": "Sopas",
+    "Nombre": "Sancocho de costilla",
+    "Precio": "9,00€",
+    "Ingredientes": "Carne de ternera, yuca, choclo, plátano verde",
+    "Días": "F"
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Sandwich mixto",
+    "Precio": "3,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Sangría",
+    "Precio": "11,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Combinados",
+    "Nombre": "Seco de carne",
+    "Precio": "9,00€",
+    "Ingredientes": "Ternera guisada, arroz, maduro, aguacate",
+    "Días": ""
+  },
+  {
+    "Tipo": "Postre",
+    "Nombre": "Tarta de chocolate",
+    "Precio": "",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Postre",
+    "Nombre": "Tarta de dulce de leche",
+    "Precio": "",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Postre",
+    "Nombre": "Tarta de mango",
+    "Precio": "",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Postre",
+    "Nombre": "Tarta de queso con arándanos",
+    "Precio": "",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Desayuno",
+    "Nombre": "Tigrillo con huevo frito",
+    "Precio": "7,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Tónica",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Tropical",
+    "Precio": "2,00€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Porción",
+    "Nombre": "Yuca",
+    "Precio": "5,50€",
+    "Ingredientes": "",
+    "Días": ""
+  },
+  {
+    "Tipo": "Bebida",
+    "Nombre": "Zumo (melocotón - piña - naranja)",
+    "Precio": "1,80€",
+    "Ingredientes": "",
+    "Días": ""
+  }
+]

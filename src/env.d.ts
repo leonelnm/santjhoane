@@ -20,3 +20,7 @@ type Plato = {
   ingredientes?: string;
   dias?: string[];
 }
+
+type MapPlato = {
+  [key in TipoPlato]: Plato[]
+}
