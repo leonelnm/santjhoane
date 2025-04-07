@@ -1,0 +1,19 @@
+---
+export interface Props {
+  categoria: string;
+  title: string;
+  isActive: boolean
+}
+const { categoria, title, isActive } = Astro.props;
+
+const isTodo = categoria === "todo";
+const path = isTodo ? "/menu/" : "/menu/" + categoria;
+---
+
+<a
+  id={isActive ? "active-button" : undefined}
+  class={`flex justify-center items-center text-center rounded-lg px-4 py-2 text-sm font-medium ${isActive ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-800"}`}
+  href={path}
+>
+  {title}
+</a>

@@ -1,0 +1,13 @@
+---
+import { getAllPlatos } from "../../api/platos";
+import ButtonReturnTop from "./ButtonReturnTop.astro";
+import MenuVista from "./MenuVista.tsx";
+
+const platos = await getAllPlatos();
+---
+
+<div class="p-4">
+  <h1>Menu</h1>
+  <MenuVista client:load productos={platos} />
+  <ButtonReturnTop />
+</div>

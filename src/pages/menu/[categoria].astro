@@ -1,12 +1,21 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import FiltroNavbar from "../../components/menu/FiltroNavbar.astro";
-import { CategoriasOrdenadas, getAllPlatos } from "../../api/platos";
+import { CategoriasOrdenadas, getPlatosByCategoria } from "../../api/platos";
 import ProductsByCategoria from "../../components/menu/ProductsByCategoria.astro";
 import LayoutMenu from "../../layouts/LayoutMenu.astro";
 
-const products = await getAllPlatos();
-const categoriasArray = Array.from(CategoriasOrdenadas.entries());
+export async function getStaticPaths() {
+  const categoriasArray = Array.from(CategoriasOrdenadas.entries());
+  return [
+    ...categoriasArray.map(([categoria]) => ({
+      params: { categoria },
+    })),
+  ];
+}
+
+const { categoria } = Astro.params;
+const products = await getPlatosByCategoria(categoria as Categoria);
 ---
 
 <Layout
@@ -14,16 +23,7 @@ const categoriasArray = Array.from(CategoriasOrdenadas.entries());
   description="Conoce todas las opciones de carta disponibles en Restaurante Sant Jhoane, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia."
 >
   <LayoutMenu>
-    <FiltroNavbar currentCategoria={"todo"} />
-    <div class="flex flex-col gap-12">
-      {
-        categoriasArray.map(([categoria]) => (
-          <ProductsByCategoria
-            categoria={categoria}
-            platos={products.filter((p) => p.categoria.includes(categoria))}
-          />
-        ))
-      }
-    </div>
+    <FiltroNavbar currentCategoria={categoria} />
+    <ProductsByCategoria categoria={categoria} platos={products} />
   </LayoutMenu>
 </Layout>

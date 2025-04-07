@@ -1,26 +1,23 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
-type TipoPlato =
+type Categoria =
+  | 'Batidos'
   | 'Bebida'
   | 'Café'
   | 'Combinados'
   | 'Desayuno'
   | 'Entrantes'
   | 'Porción'
-  | 'CombinadosMenestra'
-  | 'Batidos'
   | 'Postre'
   | 'Sopas';
 
 type Plato = {
-  tipo: TipoPlato[]
+  categoria: Categoria[]
   nombre: string;
   precio: string;
   ingredientes?: string;
   dias?: string[];
 }
 
-type MapPlato = {
-  [key in TipoPlato]: Plato[]
-}
+type CategoriaNombre = Map<Categoria, string>
