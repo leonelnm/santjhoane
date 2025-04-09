@@ -25,7 +25,15 @@
     "Nombre": "Apanado",
     "Precio": "9,50€",
     "Ingredientes": "Ternera apanada, arroz, patatas, ensalada, aguacate",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "apanado_2_qqxsrb",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140001/santjhoane/apanado_2_qqxsrb.webp"
+    },
+    "img1": {
+      "nombre": "apanado_g3qjno",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/apanado_g3qjno.webp"
+    }
   },
   {
     "Tipo": "Bebida",
@@ -53,7 +61,11 @@
     "Nombre": "Arroz con camarones",
     "Precio": "14,50€",
     "Ingredientes": "Arroz frito con camarones, verduras, maduro frito",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "arroz_con_camaron_voc5vg",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/arroz_con_camaron_voc5vg.webp"
+    }
   },
   {
     "Tipo": "Combinados",
@@ -67,14 +79,30 @@
     "Nombre": "Bandera",
     "Precio": "13,50€",
     "Ingredientes": "Arroz, guatita, ceviche, ternera guisada",
-    "Días": "V|F"
+    "Días": "V|F",
+    "img": {
+      "nombre": "bandera_2_lljvx4",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140003/santjhoane/bandera_2_lljvx4.webp"
+    },
+    "img1": {
+      "nombre": "bandera_dn4kjd",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/bandera_dn4kjd.webp"
+    }
   },
   {
     "Tipo": "Combinados",
     "Nombre": "Bandera completa",
     "Precio": "16,50€",
     "Ingredientes": "Arroz, guatita, ceviche, ternera guisada, encebollado",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "bandera_completa_k73pgx",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140004/santjhoane/bandera_completa_k73pgx.webp"
+    },
+    "img1": {
+      "nombre": "bandera_completa_2_sq2mej",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140005/santjhoane/bandera_completa_2_sq2mej.webp"
+    }
   },
   {
     "Tipo": "Desayuno",
@@ -144,7 +172,11 @@
     "Nombre": "Camarones apanados",
     "Precio": "13,50€",
     "Ingredientes": "Camarones apanados, patatas fritas, ensalada",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "camarones_conn_patatas_cxrjwp",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/camarones_conn_patatas_cxrjwp.webp"
+    }
   },
   {
     "Tipo": "Café",
@@ -200,7 +232,11 @@
     "Nombre": "Ceviche",
     "Precio": "10,00€",
     "Ingredientes": "Gambas, tomate, cebolla, limón, chifles",
-    "Días": "V|F"
+    "Días": "V|F",
+    "img": {
+      "nombre": "ceviche_otlsiy",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/ceviche_otlsiy.webp"
+    }
   },
   {
     "Tipo": "Combinados",
@@ -221,7 +257,15 @@
     "Nombre": "Churrasco",
     "Precio": "9,50€",
     "Ingredientes": "Ternera a la plancha, arroz, patata, huevo frito, ensalada, aguacate",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "churrasco_megi2b",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140007/santjhoane/churrasco_megi2b.webp"
+    },
+    "img1": {
+      "nombre": "churrasco_2_trfgsw",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140008/santjhoane/churrasco_2_trfgsw.webp"
+    }
   },
   {
     "Tipo": "Bebida",
@@ -249,7 +293,11 @@
     "Nombre": "Dorada",
     "Precio": "14,50€",
     "Ingredientes": "Dorada frita, patacones, yuca, ensalada",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "dorada_ipsani",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140008/santjhoane/dorada_ipsani.webp"
+    }
   },
   {
     "Tipo": "Combinados",
@@ -277,14 +325,26 @@
     "Nombre": "Encebollado",
     "Precio": "10,00€",
     "Ingredientes": "Pescado, yuca, cebolla, tomate, cilantro, limón, chifles",
-    "Días": "V|F"
+    "Días": "V|F",
+    "img": {
+      "nombre": "encebollado_lbssmc",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140009/santjhoane/encebollado_lbssmc.webp"
+    },
+    "img1": {
+      "nombre": "encebollado_2_avgdni",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140010/santjhoane/encebollado_2_avgdni.webp"
+    }
   },
   {
     "Tipo": "Sopas",
     "Nombre": "Encebollado Mixto",
     "Precio": "13,90€",
     "Ingredientes": "Encebollado con ceviche de camarón",
-    "Días": "V|F"
+    "Días": "V|F",
+    "img": {
+      "nombre": "encebollado_mixto_rm4pe7",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140010/santjhoane/encebollado_mixto_rm4pe7.webp"
+    }
   },
   {
     "Tipo": "Porción",
@@ -312,7 +372,11 @@
     "Nombre": "Fritada",
     "Precio": "11,50€",
     "Ingredientes": "Carne de cerdo, mote, patata cocida, maduro frito, ensalada",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "fritada_fknle4",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140011/santjhoane/fritada_fknle4.webp"
+    }
   },
   {
     "Tipo": "Combinados",
@@ -368,14 +432,26 @@
     "Nombre": "Hornado",
     "Precio": "12,90€",
     "Ingredientes": "Cerdo al horno, patata cocida, maduro, mote, ensalada",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "hornado_lvdp1k",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140012/santjhoane/hornado_lvdp1k.webp"
+    },
+    "img1": {
+      "nombre": "hornado_2_jhrrxj",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140013/santjhoane/hornado_2_jhrrxj.webp"
+    }
   },
   {
     "Tipo": "Combinados",
     "Nombre": "Hornado con tortillas",
     "Precio": "14,90€",
     "Ingredientes": "Cerdo al horno, llapingachos, maduro, mote, ensalada, aguacate",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "hornado_con_tortillas_jcv2ba",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/hornado_con_tortillas_jcv2ba.webp"
+    }
   },
   {
     "Tipo": "Desayuno",
@@ -396,14 +472,38 @@
     "Nombre": "Llapingacho",
     "Precio": "14,50€",
     "Ingredientes": "Llapingachos, chorizo, ternera, salsa de maní, huevo frito, aguacate, ensalada",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "llapingacho_zlzbwg",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/llapingacho_zlzbwg.webp"
+    },
+    "img1": {
+      "nombre": "llapingacho_2_yboank",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_2_yboank.webp"
+    },
+    "img2": {
+      "nombre": "llapingacho_3_adw7nm",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_3_adw7nm.webp"
+    }
   },
   {
     "Tipo": "Porción",
     "Nombre": "Llapingacho",
     "Precio": "5,00€",
     "Ingredientes": "",
-    "Días": "F"
+    "Días": "F",
+    "img": {
+      "nombre": "llapingacho_zlzbwg",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/llapingacho_zlzbwg.webp"
+    },
+    "img1": {
+      "nombre": "llapingacho_2_yboank",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_2_yboank.webp"
+    },
+    "img2": {
+      "nombre": "llapingacho_3_adw7nm",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_3_adw7nm.webp"
+    }
   },
   {
     "Tipo": "Porción",
@@ -417,7 +517,15 @@
     "Nombre": "Maduro con queso",
     "Precio": "6,50€",
     "Ingredientes": "Plátano maduro frito, queso latino",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "maduro_con_queso_2_f2fknl",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140017/santjhoane/maduro_con_queso_2_f2fknl.webp"
+    },
+    "img1": {
+      "nombre": "maduro_con_queso_dmyefq",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140016/santjhoane/maduro_con_queso_dmyefq.webp"
+    }
   },
   {
     "Tipo": "Batidos",
@@ -445,7 +553,11 @@
     "Nombre": "Menestra con camarones apanados",
     "Precio": "13,50€",
     "Ingredientes": "Camarones apanados, arroz, patacones, menestra",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "menestra_camarones_diaqks",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_camarones_diaqks.webp"
+    }
   },
   {
     "Tipo": "Combinados|Menestra",
@@ -473,7 +585,11 @@
     "Nombre": "Menestra con hornado",
     "Precio": "11,00€",
     "Ingredientes": "Hornado, arroz, patacones, menestra",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "menestra_hornado_j9k3w2",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_hornado_j9k3w2.webp"
+    }
   },
   {
     "Tipo": "Combinados|Menestra",
@@ -529,7 +645,11 @@
     "Nombre": "Mote con chicharrón",
     "Precio": "7,50€",
     "Ingredientes": "Chorizo criollo, mote, ensalada",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "mote_chicharrón_zuvjcx",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/mote_chicharr%C3%B3n_zuvjcx.webp"
+    }
   },
   {
     "Tipo": "Desayuno",
@@ -571,7 +691,11 @@
     "Nombre": "Papi pollo",
     "Precio": "6,50€",
     "Ingredientes": "Patatas fritas, pechuga a la plancha, ketchup, mayonesa",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "papi_pollo_c6llus",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140020/santjhoane/papi_pollo_c6llus.webp"
+    }
   },
   {
     "Tipo": "Porción",
@@ -585,7 +709,11 @@
     "Nombre": "Patacón con queso",
     "Precio": "6,50€",
     "Ingredientes": "Patacón de plátano verde, queso latino",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "patacon_queso_b2j8cs",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140021/santjhoane/patacon_queso_b2j8cs.webp"
+    }
   },
   {
     "Tipo": "Porción",
@@ -606,7 +734,11 @@
     "Nombre": "Plato combinado",
     "Precio": "11,50€",
     "Ingredientes": "Ternera, chicharrón, patacón, queso, ensalada",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "plato_combinado_t0g3pu",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140022/santjhoane/plato_combinado_t0g3pu.webp"
+    }
   },
   {
     "Tipo": "Bebida",
@@ -634,7 +766,11 @@
     "Nombre": "Salchipapa",
     "Precio": "4,90€",
     "Ingredientes": "Patatas fritas, salchichas, ketchup, mayonesa",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "salchipapa_mihrqc",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140023/santjhoane/salchipapa_mihrqc.webp"
+    }
   },
   {
     "Tipo": "Sopas",
@@ -662,7 +798,11 @@
     "Nombre": "Seco de carne",
     "Precio": "9,00€",
     "Ingredientes": "Ternera guisada, arroz, maduro, aguacate",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "seco_carne_y36wqe",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140023/santjhoane/seco_carne_y36wqe.webp"
+    }
   },
   {
     "Tipo": "Postre",
@@ -697,7 +837,11 @@
     "Nombre": "Tigrillo con huevo frito",
     "Precio": "7,50€",
     "Ingredientes": "",
-    "Días": ""
+    "Días": "",
+    "img": {
+      "nombre": "tigrillo_ydvws8",
+      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140024/santjhoane/tigrillo_ydvws8.webp"
+    }
   },
   {
     "Tipo": "Bebida",
