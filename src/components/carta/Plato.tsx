@@ -1,5 +1,4 @@
 export default function Plato({ plato }: { plato: Plato }) {
-  console.log({ plato });
 
   return (
     <article class="flex flex-col justify-center gap-2 rounded-lg bg-[#FDF6E3] p-4 shadow-md">
