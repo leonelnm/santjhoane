@@ -18,6 +18,14 @@ type Plato = {
   precio: string;
   ingredientes?: string;
   dias?: string[];
+  img?: Image
+  img2?: Image
+  img3?: Image
+}
+
+type Image = {
+  nombre: string;
+  url: string;
 }
 
 type CategoriaNombre = Map<Categoria, string>

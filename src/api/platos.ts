@@ -32,7 +32,7 @@ const getPlatosFromJson = async (json: any): Promise<Plato[]> => {
 }
 
 const objectToPlato = (obj: any): Plato => {
-  const { Tipo: tipo, Nombre: nombre, Precio: precio, Ingredientes: ingredientes, Días: dias } = obj;
+  const { Tipo: tipo, Nombre: nombre, Precio: precio, Ingredientes: ingredientes, Días: dias, img, img2, img3 } = obj;
 
   // convertir "Tipo": "Desayuno|Entrantes" en un array
   const tiposArray = tipo.split('|').map((t: string) => t.trim() as Categoria);
@@ -45,5 +45,8 @@ const objectToPlato = (obj: any): Plato => {
     precio,
     ingredientes,
     dias: diasArray,
+    img,
+    img2,
+    img3
   };
 }
