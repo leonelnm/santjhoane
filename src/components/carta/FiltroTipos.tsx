@@ -4,28 +4,38 @@ type Props = {
   seleccionada: string
 }
 
-export default function FiltroTipos({ categorías, onSelect, seleccionada }: Props){
+export default function FiltroTipos({ categorías, onSelect, seleccionada }: Props) {
 
   const categoriasArray = Array.from(categorías.entries());
-  
 
   return (
-    <div className="flex flex-row gap-2 overflow-x-auto overflow-y-hidden">
-      <button
-        className={`rounded-lg px-4 py-2 text-sm font-medium ${seleccionada === 'Todas' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
-        onClick={() => onSelect('Todas')}
-        >
-        Todas
-      </button>
-      {categoriasArray.map(([categoria, nombre]) => (
-        <button
-          key={categoria}
-          className={`rounded-lg px-4 py-2 text-sm font-medium ${seleccionada === categoria ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
-          onClick={() => onSelect(categoria)}
-        >
-          {nombre}
-        </button>
-      ))}
+    <div class="w-full overflow-x-auto">
+      <nav aria-label="Filtros para ver platos por tipo" class="flex space-x-3 overflow-x-auto pb-1">
+        <ul class="flex space-x-3 items-center p-1">
+          <li>
+            <button
+              onClick={() => onSelect('Todas')}
+              class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-none ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === 'Todas' ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
+              aria-label="Filtro para mostrar todos los platos">
+              Todos
+            </button>
+          </li>
+          {
+            categoriasArray.map(([categoria, nombre]) => (
+              <li key={categoria}>
+                <button
+                  onClick={() => onSelect(categoria)}
+                  class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-none ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === categoria ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
+                  aria-label={"Filtrar para mostrar platos por tipo " + nombre}>
+                  {nombre}
+                </button>
+              </li>
+            ))
+
+          }
+
+        </ul>
+      </nav>
     </div>
   )
 

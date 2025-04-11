@@ -13,7 +13,7 @@ export default function MenuVista({productos}: Props) {
     : productos.filter(plato => plato.categoria.includes(seleccionada as Categoria))
 
   return (
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-6 mt-4">
       <FiltroTipos categorías={CategoriasOrdenadas} seleccionada={seleccionada} onSelect={setSeleccionada} />
       <MenuSection products={filtrados} title={CategoriasOrdenadas.get(seleccionada as Categoria) ?? 'Todas'} />
     </div>

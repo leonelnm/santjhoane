@@ -18,9 +18,12 @@ type Plato = {
   precio: string;
   ingredientes?: string;
   dias?: string[];
-  img?: Image
-  img2?: Image
-  img3?: Image
+  horario?: string;
+  img?: Image;
+  img2?: Image;
+  img3?: Image;
+  etiquetas?: string[];
+  caracteristicas?: string[];
 }
 
 type Image = {

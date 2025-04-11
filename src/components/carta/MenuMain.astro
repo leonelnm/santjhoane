@@ -1,13 +1,44 @@
 ---
 import { getAllPlatos } from "../../api/platos";
-import ButtonReturnTop from "./ButtonReturnTop.astro";
+import Footer from "./Footer.astro";
 import MenuVista from "./MenuVista.tsx";
 
 const platos = await getAllPlatos();
 ---
 
-<div class="p-4">
-  <h1>Menu</h1>
-  <MenuVista client:load productos={platos} />
-  <ButtonReturnTop />
-</div>
+<main class="min-h-screen bg-[#FDF6E3] flex flex-col">
+  <header class="bg-[#78350f] text-white py-4 px-4 flex justify-between">
+    <div class="flex items-center">
+      <img
+        src="/favicon.webp"
+        alt="Logo Restaurante Sant Jhoan'e"
+        class="h-12 mr-4"
+      />
+      <h1 class="text-xl font-bold">Restaurante Sant Jhoane</h1>
+    </div>
+    <a
+      href="/"
+      class="text-white bg-amber-800 hover:bg-amber-700 font-medium rounded-full text-sm px-4 py-2 text-center inline-flex items-center gap-2"
+    >
+      <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 14 10">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 5H1m0 0l4-4M1 5l4 4"></path>
+      </svg>
+    </a>
+  </header>
+  <div class="p-4 flex-1">
+    <div class="space-y-2">
+      <h2 class="text-2xl font-bold text-amber-900">Nuestra carta</h2>
+      <p class="text-base leading-tight">
+        Descubre la auténtica gastronomía ecuatoriana, con sabores
+        tradicionales.
+      </p>
+    </div>
+    <MenuVista client:load productos={platos} />
+  </div>
+  <Footer />
+</main>

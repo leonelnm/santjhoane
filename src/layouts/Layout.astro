@@ -26,17 +26,5 @@ const { title, description = descripcionDefault } = Astro.props as Props;
 	</head>
 	<body>
 		<slot />
-		<script>
-			document.addEventListener("astro:page-load", () => {
-				const active = document.getElementById("active-button");
-				if (active) {
-					active.scrollIntoView({
-						behavior: "auto",
-						inline: "center",
-						block: "nearest",
-					});
-				}
-			});
-		</script>
 	</body>
 </html>

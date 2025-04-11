@@ -1,16 +1,13 @@
 ---
+import ButtonReturnTop from "../components/carta/ButtonReturnTop.astro";
 import MenuMain from "../components/carta/MenuMain.astro";
 import Layout from "../layouts/Layout.astro";
-import LayoutMenu from "../layouts/LayoutMenu.astro";
-
-
 ---
 
 <Layout
   title="Carta · Restaurante Sant Jhoane - Auténtica Cocina Ecuatoriana"
   description="Conoce todas las opciones de carta disponibles en Restaurante Sant Jhoane, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia."
 >
-  <LayoutMenu>
-    <MenuMain />
-  </LayoutMenu>
+  <MenuMain />
+  <ButtonReturnTop />
 </Layout>

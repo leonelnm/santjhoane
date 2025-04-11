@@ -422,7 +422,7 @@
   },
   {
     "Tipo": "Postre",
-    "Nombre": "Helado (coco - mora - tres sabores)",
+    "Nombre": "Helado",
     "Precio": "1,70€",
     "Ingredientes": "coco - mora - tres sabores",
     "Días": ""
@@ -491,19 +491,7 @@
     "Nombre": "Llapingacho",
     "Precio": "5,00€",
     "Ingredientes": "",
-    "Días": "F",
-    "img": {
-      "nombre": "llapingacho_zlzbwg",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/llapingacho_zlzbwg.webp"
-    },
-    "img1": {
-      "nombre": "llapingacho_2_yboank",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_2_yboank.webp"
-    },
-    "img2": {
-      "nombre": "llapingacho_3_adw7nm",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_3_adw7nm.webp"
-    }
+    "Días": "F"
   },
   {
     "Tipo": "Porción",
