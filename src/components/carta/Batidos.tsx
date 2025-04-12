@@ -37,7 +37,7 @@ export default function Batidos({ batidos }: { batidos: Plato[] }) {
   return (
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {batidosTransformados.map((batido) => (
-        <article class=" flex rounded-xl bg-white text-sm shadow hover:shadow-md transition-shadow overflow-hidden items-center">
+        <article class=" flex rounded-xl bg-white text-sm shadow-sm hover:shadow-md transition-shadow overflow-hidden items-center">
           {/* <!-- Imagen del plato --> */}
           {
             batido.img && (

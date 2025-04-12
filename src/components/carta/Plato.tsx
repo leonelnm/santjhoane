@@ -1,6 +1,6 @@
 export default function Plato({ plato }: { plato: Plato }) {
   return (
-    <article class="rounded-xl bg-white text-sm shadow hover:shadow-md transition-shadow overflow-hidden">
+    <article class="rounded-xl bg-white text-sm shadow-sm hover:shadow-md transition-shadow overflow-hidden">
       {/* <!-- Imagen del plato --> */}
       {
         plato.img && (

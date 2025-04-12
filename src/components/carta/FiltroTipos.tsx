@@ -15,7 +15,7 @@ export default function FiltroTipos({ categorías, onSelect, seleccionada }: Pro
           <li>
             <button
               onClick={() => onSelect('Todas')}
-              class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-none ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === 'Todas' ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
+              class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-hidden ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === 'Todas' ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
               aria-label="Filtro para mostrar todos los platos">
               Todos
             </button>
@@ -25,7 +25,7 @@ export default function FiltroTipos({ categorías, onSelect, seleccionada }: Pro
               <li key={categoria}>
                 <button
                   onClick={() => onSelect(categoria)}
-                  class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-none ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === categoria ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
+                  class={`px-4 py-2 text-sm font-semibold text-nowrap rounded-full transition-colors outline-hidden ring-2 ring-opacity-50 ring-amber-500 ${seleccionada === categoria ? 'bg-amber-600 text-amber-50' : 'text-amber-600'}`}
                   aria-label={"Filtrar para mostrar platos por tipo " + nombre}>
                   {nombre}
                 </button>
