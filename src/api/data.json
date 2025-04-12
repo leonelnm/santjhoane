@@ -629,7 +629,7 @@
     "Días": ""
   },
   {
-    "Tipo": "Entrantes",
+    "Tipo": "Desayuno|Entrantes",
     "Nombre": "Mote con chicharrón",
     "Precio": "7,50€",
     "Ingredientes": "Chorizo criollo, mote, ensalada",
@@ -638,13 +638,6 @@
       "nombre": "mote_chicharrón_zuvjcx",
       "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/mote_chicharr%C3%B3n_zuvjcx.webp"
     }
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Moto con chicharrón",
-    "Precio": "7,50€",
-    "Ingredientes": "",
-    "Días": ""
   },
   {
     "Tipo": "Bebida",
