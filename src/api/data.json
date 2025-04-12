@@ -754,11 +754,7 @@
     "Nombre": "Salchipapa",
     "Precio": "4,90€",
     "Ingredientes": "Patatas fritas, salchichas, ketchup, mayonesa",
-    "Días": "",
-    "img": {
-      "nombre": "salchipapa_mihrqc",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140023/santjhoane/salchipapa_mihrqc.webp"
-    }
+    "Días": ""
   },
   {
     "Tipo": "Sopas",

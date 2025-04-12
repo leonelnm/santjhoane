@@ -11,6 +11,9 @@ export default function Plato({ plato }: { plato: Plato }) {
               alt={`Imagen de ${plato.nombre}`}
               loading="lazy"
             />
+            {/* <!-- Cubrir la imagen con un div tarnsparente --> */}
+            <div class="absolute inset-0 bg-transparent"></div>
+
             {plato.etiquetas && <div class="absolute top-0 right-0 p-2 opacity-90">
               <div class="flex flex-col gap-2 items-end">
                 {plato.etiquetas.map((etiqueta) => (
