@@ -29,8 +29,8 @@ export default function Plato({ plato }: { plato: Plato }) {
       <section class="p-3 space-y-2">
         {/* <!-- Nombre y precio --> */}
         <header class="flex justify-between items-start">
-          <h2 class="font-[Poppins-SemiBold] text-base leading-tight line-clamp-2 text-[#78350f]" aria-label={`Nombre del plat: ${plato.nombre}`}>{plato.nombre}</h2>
-          <span class="text-sm font-semibold text-amber-600" aria-label={`Precio: ${plato.precio}`}>{plato.precio}</span>
+          <h2 class="font-[Poppins-SemiBold] text-base leading-tight line-clamp-2 text-[#78350f]" aria-label={`Nombre del plato: ${plato.nombre}`}>{plato.nombre}</h2>
+          <span class="text-sm font-semibold text-amber-600">{plato.precio}</span>
         </header>
 
         {/* <!-- Ingredientes --> */}
