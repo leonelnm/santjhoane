@@ -1,52 +1,57 @@
 <!-- Back to top button -->
 <button
-  type="button"
-  data-twe-ripple-init
-  data-twe-ripple-color="light"
-  class="fixed! bottom-5 end-5 sm:bottom-10 sm:end-10 hidden rounded-full bg-amber-600 p-3 sm:p-5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-amber-700 hover:shadow-lg focus:bg-amber-700 focus:shadow-lg focus:outline-hidden focus:ring-0 active:bg-amber-800 active:shadow-lg"
-  id="btn-back-to-top"
+    type="button"
+    data-twe-ripple-init
+    data-twe-ripple-color="light"
+    class="fixed! bottom-5 end-5 sm:bottom-10 sm:end-10 hidden rounded-full bg-amber-600 p-3 sm:p-4 text-white shadow-lg shadow-amber-900/50 transition-all duration-300 hover:bg-amber-500 hover:scale-110 z-50 glass border border-white/20"
+    id="btn-back-to-top"
 >
-  <span class="[&>svg]:w-4">
-    <svg fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path>
-    </svg>
-  </span>
+    <span class="[&>svg]:w-4">
+        <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path>
+        </svg>
+    </span>
 </button>
 
 <script>
-  function initButtonReturnTop() {
-    const button = document.getElementById("btn-back-to-top");
-    if (!button) return;
+    function initButtonReturnTop() {
+        const button = document.getElementById("btn-back-to-top");
+        if (!button) return;
 
-    const SCROLL_THRESHOLD = 20;
+        const SCROLL_THRESHOLD = 20;
 
-    // Asegúrate de no registrar múltiples veces
-    const backToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+        // Asegúrate de no registrar múltiples veces
+        const backToTop = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
 
-    const toggleVisibility = () => {
-      const scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop;
+        const toggleVisibility = () => {
+            const scrollTop =
+                document.documentElement.scrollTop || document.body.scrollTop;
 
-      button.classList.toggle("hidden", scrollTop <= SCROLL_THRESHOLD);
-    };
+            button.classList.toggle("hidden", scrollTop <= SCROLL_THRESHOLD);
+        };
 
-    // Elimina listeners anteriores si los hubiera
-    button.removeEventListener("click", backToTop);
-    window.removeEventListener("scroll", toggleVisibility);
+        // Elimina listeners anteriores si los hubiera
+        button.removeEventListener("click", backToTop);
+        window.removeEventListener("scroll", toggleVisibility);
 
-    // Agrega los nuevos
-    button.addEventListener("click", backToTop);
-    window.addEventListener("scroll", toggleVisibility);
+        // Agrega los nuevos
+        button.addEventListener("click", backToTop);
+        window.addEventListener("scroll", toggleVisibility);
 
-    // Verifica el estado inicial
-    toggleVisibility();
-  }
-  document.addEventListener("astro:after-swap", initButtonReturnTop);
+        // Verifica el estado inicial
+        toggleVisibility();
+    }
+    document.addEventListener("astro:after-swap", initButtonReturnTop);
 
-  initButtonReturnTop();
+    initButtonReturnTop();
 </script>

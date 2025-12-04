@@ -1,48 +1,85 @@
 ---
 const data = {
-  title: "Restaurante Sant Jhoane",
-  description: "Auténticos Sabores Ecuatorianos en Cada Bocado",
-  url_video_placeholder:
-    "https://3jiwzut9f3r4kndu.public.blob.vercel-storage.com/video/video-placeholder-santjhoane.mp4",
-  url_map: "https://maps.app.goo.gl/fPTwu5DGyFdq1csG7",
-  url_phone: "tel:+34960151265",
+    title: "Restaurante Sant Jhoane",
+    description: "Auténticos Sabores Ecuatorianos en Cada Bocado",
+    url_video_placeholder:
+        "https://3jiwzut9f3r4kndu.public.blob.vercel-storage.com/video/video-placeholder-santjhoane.mp4",
+    url_map: "https://maps.app.goo.gl/fPTwu5DGyFdq1csG7",
+    url_phone: "tel:+34960151265",
 };
 ---
 
 <section
-  id="hero-section"
-  class="relative h-[60vh] flex items-center justify-center bg-[#78350f]"
+    id="hero-section"
+    class="relative h-screen flex items-center justify-center overflow-hidden"
 >
-  <video
-    id="hero-video"
-    autoplay
-    loop
-    muted
-    playsinline
-    aria-label="Video publicitario mostrando los platos, no contiene audio"
-    class="absolute inset-0 object-cover w-full h-full"
-  >
-    <source src={data.url_video_placeholder} type="video/mp4" />
-    Tu navegador no soporta el video.
-  </video>
-  <div class="absolute inset-0 bg-black/50"></div>
-  <div class="relative z-10 text-center text-white p-2">
-    <h1 class="text-5xl font-bold mb-4">{data.title}</h1>
-    <p class="text-xl mb-8">{data.description}</p>
-    <div class="flex gap-4 justify-center">
-      <a
-        href={data.url_map}
-        target="_blank"
-        class="bg-white text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition duration-300"
-      >
-        Cómo llegar
-      </a>
-      <a
-        href={data.url_phone}
-        class="bg-white text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition duration-300"
-      >
-        Llamar
-      </a>
+    <video
+        id="hero-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        aria-label="Video publicitario mostrando los platos, no contiene audio"
+        class="absolute inset-0 object-cover w-full h-full opacity-60"
+    >
+        <source src={data.url_video_placeholder} type="video/mp4" />
+        Tu navegador no soporta el video.
+    </video>
+
+    <!-- Gradient Overlay -->
+    <div
+        class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#0a0a0a]"
+    >
     </div>
-  </div>
+
+    <div
+        class="relative z-10 text-center text-white px-8 md:px-4 py-4 w-full md:max-w-4xl mx-auto flex flex-col items-center"
+    >
+        <h1
+            class="text-[13vw] md:text-8xl font-black mb-6 tracking-tight font-['Syne'] leading-tight"
+        >
+            SANT <span class="text-amber-600">JHOANE</span>
+        </h1>
+        <p
+            class="text-xl md:text-2xl mb-10 font-light tracking-wide text-gray-200 max-w-2xl"
+        >
+            {data.description}
+        </p>
+
+        <div
+            class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto"
+        >
+            <a
+                href={data.url_map}
+                target="_blank"
+                class="glass px-8 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition duration-300 border border-white/20 backdrop-blur-md"
+            >
+                Cómo llegar
+            </a>
+            <a
+                href="/carta"
+                class="bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-amber-600 transition duration-300 shadow-lg shadow-amber-900/50"
+            >
+                Ver Carta
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+    >
+        <svg
+            class="w-6 h-6 text-white/50"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
 </section>

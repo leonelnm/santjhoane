@@ -6,39 +6,75 @@ import Instagram from "../icons/instagram.astro";
 import Facebook from "../icons/Facebook.astro";
 ---
 
-<section class="bg-[#78350f] mt-16">
-  <div class="py-16 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4 text-[#FDF6E3]">Contáctanos</h2>
-    <div class="mt-8 flex flex-col gap-5 text-white">
+<section class="mt-20 relative overflow-hidden">
+  <div class="absolute inset-0 bg-amber-900/10 blur-3xl"></div>
+  <div class="py-20 px-4 max-w-4xl mx-auto relative z-10">
+    <h2 class="text-4xl font-bold mb-12 text-white font-['Syne'] text-center">
+      Contáctanos
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <a
         href="https://maps.app.goo.gl/fPTwu5DGyFdq1csG7"
         target="_blank"
         rel="noreferrer"
+        class="glass p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition duration-300 group"
       >
-        <TitleIcon
-          title="Dónde estamos"
-          ,
-          description="Calle Sapadores, 45, Valencia"
+        <div
+          class="p-4 bg-amber-900/20 rounded-full text-amber-500 group-hover:scale-110 transition duration-300"
         >
-          <Location slot="icon" />
-        </TitleIcon>
+          <Location />
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Dónde estamos</h3>
+          <p class="text-gray-400">Calle Sapadores, 45, Valencia</p>
+        </div>
       </a>
 
-      <a href="tel:+34960151265">
-        <TitleIcon title="Contacto" description="+34 960 151 265">
-          <PhoneCall slot="icon" />
-        </TitleIcon>
+      <a
+        href="tel:+34960151265"
+        class="glass p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition duration-300 group"
+      >
+        <div
+          class="p-4 bg-amber-900/20 rounded-full text-amber-500 group-hover:scale-110 transition duration-300"
+        >
+          <PhoneCall />
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Llámanos</h3>
+          <p class="text-gray-400">+34 960 151 265</p>
+        </div>
       </a>
 
-      <a href="https://www.instagram.com/restaurantesantjhoane" target="_blank">
-        <TitleIcon title="Instagram" description="@restaurantesantjhoane">
-          <Instagram slot="icon" />
-        </TitleIcon>
+      <a
+        href="https://www.instagram.com/restaurantesantjhoane"
+        target="_blank"
+        class="glass p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition duration-300 group"
+      >
+        <div
+          class="p-4 bg-amber-900/20 rounded-full text-amber-500 group-hover:scale-110 transition duration-300"
+        >
+          <Instagram />
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Instagram</h3>
+          <p class="text-gray-400">@restaurantesantjhoane</p>
+        </div>
       </a>
-      <a href="https://www.facebook.com/restaurantesantjoane" target="_blank">
-        <TitleIcon title="Facebook" description="@restaurantesantjhoane">
-          <Facebook slot="icon" />
-        </TitleIcon>
+
+      <a
+        href="https://www.facebook.com/restaurantesantjoane"
+        target="_blank"
+        class="glass p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition duration-300 group"
+      >
+        <div
+          class="p-4 bg-amber-900/20 rounded-full text-amber-500 group-hover:scale-110 transition duration-300"
+        >
+          <Facebook />
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Facebook</h3>
+          <p class="text-gray-400">@restaurantesantjhoane</p>
+        </div>
       </a>
     </div>
   </div>

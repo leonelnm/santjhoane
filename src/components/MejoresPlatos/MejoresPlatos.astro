@@ -1,40 +1,64 @@
 ---
-import Title from "../ui/Title.astro";
 import platos from "./mejoresPlatos";
 ---
 
-<section class="pt-16 px-4 max-w-4xl mx-auto">
-  <Title text="Nuestros Platos Destacados" />
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<section class="py-20 px-4 max-w-7xl mx-auto">
+  <div class="mb-12 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-white font-['Syne'] mb-4">
+      Nuestros Platos <span
+        class="text-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+        >Destacados</span
+      >
+    </h2>
+    <p class="text-gray-400 mt-4 md:hidden">Desliza para descubrir más</p>
+  </div>
+
+  <div
+    class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0 md:mx-0"
+  >
     {
       platos.map((dish) => (
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            {/* <span class="text-amber-800 text-xl">Imagen de {dish}</span> */}
+        <div class="min-w-[85vw] md:min-w-0 snap-center glass rounded-2xl overflow-hidden group hover:bg-white/5 transition duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
             <img
               loading="lazy"
               src={dish.imagen}
               alt={`Imagen de ${dish.nombre}`}
-              class="h-full w-full object-cover"
+              class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700"
             />
+            <div class="absolute bottom-0 left-0 p-6 z-20">
+              <h3 class="text-2xl font-bold text-white font-['Syne']">
+                {dish.nombre}
+              </h3>
+            </div>
           </div>
-          <div class="p-4">
-            <h3 class={`text-xl font-semibold mb-2 text-amber-900`}>
-              {dish.nombre}
-            </h3>
-            <p class="text-amber-700">{dish.descripcion}</p>
+          <div class="p-6">
+            <p class="text-gray-300 leading-relaxed">{dish.descripcion}</p>
           </div>
         </div>
       ))
     }
   </div>
 
-  <section class="text-center mt-10">
+  <section class="text-center mt-16">
     <a
       href="/carta"
-      class="text-xl inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-5 py-3 rounded-lg font-semibold shadow-md transition duration-200"
+      class="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg shadow-amber-900/30 transition duration-300"
     >
-      🍽️ <span>Ver toda la carta</span>
+      <span>Ver toda la carta</span>
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+      </svg>
     </a>
   </section>
 </section>
