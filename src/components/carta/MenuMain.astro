@@ -6,21 +6,25 @@ import MenuVista from "./MenuVista.tsx";
 const platos = await getAllPlatos();
 ---
 
-<main class="font-[Lato] min-h-screen bg-[#FDF6E3] flex flex-col">
-  <header class="bg-[#78350f] text-white">
-    <div class="container mx-auto flex justify-between py-4 px-4">
-      <div class="flex items-center">
+<main class="font-['Outfit'] min-h-screen bg-[#0a0a0a] flex flex-col">
+  <header
+    class="sticky top-0 z-50 glass-dark border-b border-white/5 backdrop-blur-xl"
+  >
+    <div class="container mx-auto flex justify-between items-center py-4 px-4">
+      <div class="flex items-center gap-3">
         <img
           src="/favicon.webp"
           alt="Logo Restaurante Sant Jhoan'e"
-          class="h-12 mr-4"
+          class="h-10 w-10 rounded-full ring-2 ring-amber-900/50"
         />
-        <h1 class="text-xl font-bold">Restaurante Sant Jhoane</h1>
+        <h1 class="text-lg font-bold text-white font-['Syne'] tracking-wide">
+          SANT <span class="text-amber-500">JHOANE</span>
+        </h1>
       </div>
       <a
         href="/"
         aria-label="Regresar a la pantalla principal"
-        class="text-white bg-amber-800 hover:bg-amber-700 font-medium rounded-full text-sm px-4 py-2 text-center inline-flex items-center gap-2"
+        class="text-white bg-white/5 hover:bg-white/10 border border-white/10 font-medium rounded-full text-sm px-4 py-2 transition duration-300 flex items-center gap-2"
       >
         <svg class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 14 10">
           <path
@@ -30,15 +34,19 @@ const platos = await getAllPlatos();
             stroke-width="2"
             d="M13 5H1m0 0l4-4M1 5l4 4"></path>
         </svg>
+        <span class="hidden sm:inline">Volver</span>
       </a>
     </div>
   </header>
-  <div class="p-4 flex-1 container mx-auto">
-    <div class="space-y-2">
-      <h2 class="text-2xl font-bold text-amber-900">Nuestra carta</h2>
-      <p class="text-base leading-tight">
-        Descubre la auténtica gastronomía ecuatoriana, con sabores
-        tradicionales.
+
+  <div class="p-4 flex-1 container mx-auto max-w-5xl">
+    <div class="space-y-4 mb-8 mt-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white font-['Syne']">
+        Nuestra Carta
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+        Descubre la auténtica gastronomía ecuatoriana, con sabores tradicionales
+        y un toque moderno.
       </p>
     </div>
     <MenuVista client:load productos={platos} />

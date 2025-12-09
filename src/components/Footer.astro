@@ -2,8 +2,13 @@
 const year = new Date().getFullYear();
 ---
 
-<footer class="mt-16 bg-[#78350f] text-white py-8 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <p>&copy; {year} Restaurante Sant Jhoane.</p>
-  </div>
+<footer
+    class="mt-20 border-t border-white/5 bg-[#050505] text-gray-400 py-12 px-4"
+>
+    <div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-4">
+        <p class="font-['Syne'] text-lg font-bold text-white">
+            Restaurante Sant Jhoane
+        </p>
+        <p class="text-sm">&copy; {year} Todos los derechos reservados.</p>
+    </div>
 </footer>
