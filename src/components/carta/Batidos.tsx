@@ -61,7 +61,7 @@ export default function Batidos({ batidos }: { batidos: Plato[] }) {
                                 {batido.variantes.map(({ ingredientes, precio }) => (
                                     <div class="flex gap-3 items-center justify-end">
                                         <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider" aria-label={ingredientes}>{ingredientes}</p>
-                                        <span class="text-sm font-bold text-amber-500" aria-label={`Precio: ${precio}`}>{precio}</span>
+                                        {/* <span class="text-sm font-bold text-amber-500" aria-label={`Precio: ${precio}`}>{precio}</span> */}
                                     </div>
                                 ))}
                             </div>
