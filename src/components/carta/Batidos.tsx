@@ -58,7 +58,7 @@ export default function Batidos({ batidos }: { batidos: Plato[] }) {
                         <header class="flex justify-between items-center gap-2">
                             <h2 class="text-base font-bold leading-tight text-white font-['Syne']" aria-label={`Nombre del batido: ${batido.nombre}`}>{batido.nombre}</h2>
                             <div class={"flex flex-col gap-1"}>
-                                {batido.variantes.map(({ ingredientes, precio }) => (
+                                {batido.variantes.map(({ ingredientes }) => (
                                     <div class="flex gap-3 items-center justify-end">
                                         <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider" aria-label={ingredientes}>{ingredientes}</p>
                                         {/* <span class="text-sm font-bold text-amber-500" aria-label={`Precio: ${precio}`}>{precio}</span> */}
