@@ -22,7 +22,7 @@ export const faqList: FAQItem[] = [
   {
     question: "¿Hacen entregas a domicilio?",
     answer:
-      "No, no por ahora no realizamos entregas a domicilio. Puedes realizar tu pedido llamándonos directamente al +34960151265 o a través de nuestra página web en la sección de contacto.",
+      "No ofrecemos entregas a domicilio actualmente. Sin embargo, tenemos disponible la opción de comida para llevar (Take Away). ¡Haz tu pedido y recógelo en el local!",
   },
   {
     question: "¿Aceptan reservas?",
