@@ -7,12 +7,43 @@ import Horario from "../components/Horario.astro";
 import Layout from "../layouts/Layout.astro";
 import HeroVideo from "../components/HeroVideo.astro";
 import ContactoIcons from "../components/ContactoIcons.astro";
+import JsonLD from "../components/JsonLD.astro";
+import FAQ from "../components/FAQ.astro";
+import { info } from "../api/info";
+import { faqList } from "../api/faq";
+import mejoresPlatos from "../components/MejoresPlatos/mejoresPlatos";
+
+const menuItems = mejoresPlatos.map((plato) => ({
+  "@type": "MenuItem",
+  name: plato.nombre,
+  description: plato.descripcion,
+}));
 ---
 
 <Layout
   title="Sant Jhoan'e - Restaurante Ecuatoriano en Valencia | Comida Auténtica"
   description="Descubre Sant Jhoan'e, tu Restaurante Ecuatoriano en Valencia. Ofrecemos comida ecuatoriana auténtica. También conocido como Sant Joan o San Joan."
 >
+  <JsonLD
+    slot="head-jsonld"
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      ...info,
+      image: [`${info.url}/favicon.webp`],
+      hasMenu: {
+        "@type": "Menu",
+        name: "Platos populares",
+        hasMenuSection: [
+          {
+            "@type": "MenuSection",
+            name: "Platos insignia ecuatorianos y latinos",
+            hasMenuItem: menuItems,
+          },
+        ],
+      },
+    }}
+  />
   <main class="min-h-screen bg-[#0a0a0a]">
     <!-- <Hero /> -->
     <HeroVideo />
@@ -21,6 +52,8 @@ import ContactoIcons from "../components/ContactoIcons.astro";
     <!-- <Contacto /> -->
     <ContactoIcons />
     <Horario />
+
+    <FAQ items={faqList} />
 
     <Footer />
   </main>

@@ -3,35 +3,36 @@ import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
-	title: string;
-	description?: string;
+  title: string;
+  description?: string;
 }
 
 const descripcionDefault =
-	"Descubre Restaurante Sant Jhoan'e, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia.";
+  "Descubre Restaurante Sant Jhoan'e, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia.";
 
 const { title, description = descripcionDefault } = Astro.props as Props;
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/webp" href="/favicon.webp" />
-		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syne:wght@400;700;800&display=swap"
-			rel="stylesheet"
-		/>
-		<ClientRouter />
-	</head>
-	<body class="bg-[#0a0a0a] text-white font-['Outfit']">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <slot name="head-jsonld" />
+    <ClientRouter />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>

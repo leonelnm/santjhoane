@@ -2,12 +2,32 @@
 import ButtonReturnTop from "../components/carta/ButtonReturnTop.astro";
 import MenuMain from "../components/carta/MenuMain.astro";
 import Layout from "../layouts/Layout.astro";
+import JsonLD from "../components/JsonLD.astro";
+import { info } from "../api/info";
+import { getMenuSectionsJsonLD } from "../api/platos";
+
+const menuSections = await getMenuSectionsJsonLD();
 ---
 
 <Layout
   title="Carta · Restaurante Sant Jhoane - Auténtica Cocina Ecuatoriana"
   description="Conoce todas las opciones de carta disponibles en Restaurante Sant Jhoane, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia."
 >
+  <JsonLD
+    slot="head-jsonld"
+    data={{
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      ...info,
+      image: [`${info.url}/favicon.webp`],
+      url: `${info.url}/carta`,
+      hasMenu: {
+        "@type": "Menu",
+        name: "Carta Sant Jhoan'e",
+        hasMenuSection: menuSections,
+      },
+    }}
+  />
   <MenuMain />
   <ButtonReturnTop />
 </Layout>

@@ -1,4 +1,4 @@
-export default function Plato({ plato }: { plato: Plato }) {
+export default function Plato({ plato, includePrices = false }: { plato: Plato, includePrices?: boolean }) {
     return (
         <article class="rounded-2xl glass border border-white/5 overflow-hidden hover:bg-white/5 transition-all duration-300 group">
             {/* <!-- Imagen del plato --> */}
@@ -27,7 +27,7 @@ export default function Plato({ plato }: { plato: Plato }) {
                 {/* <!-- Nombre y precio --> */}
                 <header class="flex justify-between items-start gap-4">
                     <h2 class="font-['Syne'] text-lg font-bold leading-tight text-white group-hover:text-amber-500 transition-colors" aria-label={`Nombre del plato: ${plato.nombre}`}>{plato.nombre}</h2>
-                    {/* <span class="text-lg font-bold text-amber-500 whitespace-nowrap">{plato.precio}</span> */}
+                    {includePrices && <span class="text-lg font-bold text-amber-500 whitespace-nowrap">{plato.precio}</span>}
                 </header>
 
                 {/* <!-- Ingredientes --> */}
