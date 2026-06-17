@@ -2,33 +2,53 @@
 /// <reference types="astro/client" />
 
 type Categoria =
-  | 'Batidos'
-  | 'Bebida'
-  | 'Café'
-  | 'Combinados'
-  | 'Desayuno'
-  | 'Entrantes'
-  | 'Porción'
-  | 'Postre'
-  | 'Sopas';
+  | "breakfast"
+  | "starters"
+  | "combo-platters"
+  | "sides"
+  | "soups"
+  | "smoothies"
+  | "desserts"
+  | "beverages"
+  | "coffee";
+
+type Lang = "es" | "en";
+
+type CategoriaNombre = Map<Categoria, string>;
+
+type LocalizedString = Record<Lang, string>;
+
+type LocalizedList = Record<Lang, string[]>;
+
+interface CloudinaryImage {
+  name: string;
+  url: string;
+}
+
+interface DishImages {
+  default?: CloudinaryImage;
+  featured?: CloudinaryImage;
+}
+
+interface Dish {
+  id: string;
+  category: Categoria[];
+  isFeatured: boolean;
+  name: LocalizedString;
+  price?: number;
+  ingredients: LocalizedList;
+  availableDays: string[];
+  images?: DishImages;
+}
+
+type Image = CloudinaryImage;
 
 type Plato = {
-  categoria: Categoria[]
+  categoria: Categoria[];
+  isFeatured: boolean;
   nombre: string;
   precio: string;
   ingredientes?: string;
   dias?: string[];
-  horario?: string;
   img?: Image;
-  img2?: Image;
-  img3?: Image;
-  etiquetas?: string[];
-  caracteristicas?: string[];
-}
-
-type Image = {
-  nombre: string;
-  url: string;
-}
-
-type CategoriaNombre = Map<Categoria, string>
+};

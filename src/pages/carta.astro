@@ -6,7 +6,7 @@ import JsonLD from "../components/JsonLD.astro";
 import { info } from "../api/info";
 import { getMenuSectionsJsonLD } from "../api/platos";
 
-const menuSections = await getMenuSectionsJsonLD();
+const menuSections = await getMenuSectionsJsonLD(false, "es");
 ---
 
 <Layout

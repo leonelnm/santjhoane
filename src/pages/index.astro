@@ -11,12 +11,13 @@ import JsonLD from "../components/JsonLD.astro";
 import FAQ from "../components/FAQ.astro";
 import { info } from "../api/info";
 import { faqList } from "../api/faq";
-import mejoresPlatos from "../components/MejoresPlatos/mejoresPlatos";
+import { getFeaturedPlatos } from "../api/platos";
 
-const menuItems = mejoresPlatos.map((plato) => ({
+const featured = await getFeaturedPlatos("es");
+const menuItems = featured.map((plato) => ({
   "@type": "MenuItem",
   name: plato.nombre,
-  description: plato.descripcion,
+  description: plato.ingredientes,
 }));
 ---
 

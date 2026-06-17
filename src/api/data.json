@@ -1,851 +1,2448 @@
 [
   {
-    "Tipo": "Bebida",
-    "Nombre": "Agua con Gas",
-    "Precio": "1,80€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Agua Pequeña",
-    "Precio": "1,60€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Americano",
-    "Precio": "1,20€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Apanado",
-    "Precio": "9,50€",
-    "Ingredientes": "Ternera apanada, arroz, patatas, ensalada, aguacate",
-    "Días": "",
-    "img": {
-      "nombre": "apanado_2_qqxsrb",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140001/santjhoane/apanado_2_qqxsrb.webp"
+    "id": "agua-con-gas",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Agua con Gas",
+      "en": "Sparkling Water"
     },
-    "img1": {
-      "nombre": "apanado_g3qjno",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/apanado_g3qjno.webp"
-    }
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Aquarius (naranja - limón)",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Desayuno|Entrantes",
-    "Nombre": "Arepa con chorizo y queso",
-    "Precio": "7,00€",
-    "Ingredientes": "Arepa de maíz, chorizo, queso latino",
-    "Días": ""
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Arroz",
-    "Precio": "3,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Arroz con camarones",
-    "Precio": "14,50€",
-    "Ingredientes": "Arroz frito con camarones, verduras, maduro frito",
-    "Días": "F",
-    "img": {
-      "nombre": "arroz_con_camaron_voc5vg",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/arroz_con_camaron_voc5vg.webp"
-    }
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Bandeja paisa",
-    "Precio": "15,90€",
-    "Ingredientes": "Arroz, frijoles (menestra), huevo, chorizo, arepa, chicharrón (fritada), maduro, aguacate",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Bandera",
-    "Precio": "13,50€",
-    "Ingredientes": "Arroz, guatita, ceviche, ternera guisada",
-    "Días": "V|F",
-    "img": {
-      "nombre": "bandera_2_lljvx4",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140003/santjhoane/bandera_2_lljvx4.webp"
+    "price": 1.8,
+    "ingredients": {
+      "es": [],
+      "en": []
     },
-    "img1": {
-      "nombre": "bandera_dn4kjd",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/bandera_dn4kjd.webp"
-    }
+    "availableDays": []
   },
   {
-    "Tipo": "Combinados",
-    "Nombre": "Bandera completa",
-    "Precio": "16,50€",
-    "Ingredientes": "Arroz, guatita, ceviche, ternera guisada, encebollado",
-    "Días": "F",
-    "img": {
-      "nombre": "bandera_completa_k73pgx",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140004/santjhoane/bandera_completa_k73pgx.webp"
+    "id": "agua-pequena",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Agua Pequeña",
+      "en": "Small Water"
     },
-    "img1": {
-      "nombre": "bandera_completa_2_sq2mej",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140005/santjhoane/bandera_completa_2_sq2mej.webp"
-    }
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Bolón de verde con huevo frito",
-    "Precio": "5,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Bolón de verde con seco de carne y huevo frito",
-    "Precio": "9,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Bombón",
-    "Precio": "1,60€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Café con leche",
-    "Precio": "1,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Café cortado",
-    "Precio": "1,30€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Café solo",
-    "Precio": "1,10€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Sopas",
-    "Nombre": "Caldo de bola",
-    "Precio": "11,00€",
-    "Ingredientes": "Carne de ternera, bola de plátano verde, yuca, col, choclo, plátano verde",
-    "Días": "F"
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Calentado de frijoles con carne",
-    "Precio": "7,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Calentado de frijoles con huevo frito",
-    "Precio": "5,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Entrantes",
-    "Nombre": "Camarones apanados",
-    "Precio": "13,50€",
-    "Ingredientes": "Camarones apanados, patatas fritas, ensalada",
-    "Días": "",
-    "img": {
-      "nombre": "camarones_conn_patatas_cxrjwp",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/camarones_conn_patatas_cxrjwp.webp"
-    }
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Carajillo de coñac",
-    "Precio": "1,40€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Amstel 1/3",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Coronita 1/3",
-    "Precio": "2,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Heineken 1/3",
-    "Precio": "2,20€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Pilsener",
-    "Precio": "",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Radler 1/3",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Cerveza Sin Alc",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Sopas",
-    "Nombre": "Ceviche",
-    "Precio": "10,00€",
-    "Ingredientes": "Gambas, tomate, cebolla, limón, chifles",
-    "Días": "V|F",
-    "img": {
-      "nombre": "ceviche_otlsiy",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/ceviche_otlsiy.webp"
-    }
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Chaulafán (Arroz chino)",
-    "Precio": "14,50€",
-    "Ingredientes": "Ternera, lomo de cerdo, pollo, camarones, verduras, maduro",
-    "Días": "F"
-  },
-  {
-    "Tipo": "Entrantes",
-    "Nombre": "Choclo con queso",
-    "Precio": "6,50€",
-    "Ingredientes": "Mazorca de maíz, queso latino",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Churrasco",
-    "Precio": "9,50€",
-    "Ingredientes": "Ternera a la plancha, arroz, patata, huevo frito, ensalada, aguacate",
-    "Días": "",
-    "img": {
-      "nombre": "churrasco_megi2b",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140007/santjhoane/churrasco_megi2b.webp"
+    "price": 1.6,
+    "ingredients": {
+      "es": [],
+      "en": []
     },
-    "img1": {
-      "nombre": "churrasco_2_trfgsw",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140008/santjhoane/churrasco_2_trfgsw.webp"
-    }
+    "availableDays": []
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Coca Cola 350ml",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Colacao",
-    "Precio": "1,80€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Copa de Vino (tinto - blanco)",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Dorada",
-    "Precio": "14,50€",
-    "Ingredientes": "Dorada frita, patacones, yuca, ensalada",
-    "Días": "",
-    "img": {
-      "nombre": "dorada_ipsani",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140008/santjhoane/dorada_ipsani.webp"
-    }
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Dorada con arroz",
-    "Precio": "14,50€",
-    "Ingredientes": "Dorada frita, patatas, arroz, ensalada",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Dorada con menestra",
-    "Precio": "14,50€",
-    "Ingredientes": "Dorada frita, arroz, menestra, patacones",
-    "Días": ""
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Empanada",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Sopas",
-    "Nombre": "Encebollado",
-    "Precio": "10,00€",
-    "Ingredientes": "Pescado, yuca, cebolla, tomate, cilantro, limón, chifles",
-    "Días": "V|F",
-    "img": {
-      "nombre": "encebollado_lbssmc",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140009/santjhoane/encebollado_lbssmc.webp"
+    "id": "americano",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Americano",
+      "en": "Americano"
     },
-    "img1": {
-      "nombre": "encebollado_2_avgdni",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140010/santjhoane/encebollado_2_avgdni.webp"
-    }
-  },
-  {
-    "Tipo": "Sopas",
-    "Nombre": "Encebollado Mixto",
-    "Precio": "13,90€",
-    "Ingredientes": "Encebollado con ceviche de camarón",
-    "Días": "V|F",
-    "img": {
-      "nombre": "encebollado_mixto_rm4pe7",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140010/santjhoane/encebollado_mixto_rm4pe7.webp"
-    }
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Ensalada",
-    "Precio": "3,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Ensalada Completa",
-    "Precio": "7,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Fanta",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Fritada",
-    "Precio": "11,50€",
-    "Ingredientes": "Carne de cerdo, mote, patata cocida, maduro frito, ensalada",
-    "Días": "",
-    "img": {
-      "nombre": "fritada_fknle4",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140011/santjhoane/fritada_fknle4.webp"
-    }
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Fritada completa",
-    "Precio": "16,90€",
-    "Ingredientes": "Carne de cerdo, mote, patata, queso, choclo, tostado, maduro frito, ensalada",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Fritada con choclo",
-    "Precio": "10,00€",
-    "Ingredientes": "Fritada de cerdo, mazorca de maíz, ensalada",
-    "Días": ""
-  },
-  {
-    "Tipo": "Batidos",
-    "Nombre": "Guanabana",
-    "Precio": "5,50€",
-    "Ingredientes": "leche",
-    "Días": ""
-  },
-  {
-    "Tipo": "Batidos",
-    "Nombre": "Guanabana",
-    "Precio": "5,00€",
-    "Ingredientes": "agua",
-    "Días": ""
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Guatita",
-    "Precio": "5,50€",
-    "Ingredientes": "",
-    "Días": "F"
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Guiso de ternera",
-    "Precio": "6,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Postre",
-    "Nombre": "Helado",
-    "Precio": "1,70€",
-    "Ingredientes": "coco - mora - tres sabores",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Hornado",
-    "Precio": "12,90€",
-    "Ingredientes": "Cerdo al horno, patata cocida, maduro, mote, ensalada",
-    "Días": "F",
-    "img": {
-      "nombre": "hornado_lvdp1k",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140012/santjhoane/hornado_lvdp1k.webp"
+    "price": 1.2,
+    "ingredients": {
+      "es": [],
+      "en": []
     },
-    "img1": {
-      "nombre": "hornado_2_jhrrxj",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140013/santjhoane/hornado_2_jhrrxj.webp"
-    }
+    "availableDays": []
   },
   {
-    "Tipo": "Combinados",
-    "Nombre": "Hornado con tortillas",
-    "Precio": "14,90€",
-    "Ingredientes": "Cerdo al horno, llapingachos, maduro, mote, ensalada, aguacate",
-    "Días": "F",
-    "img": {
-      "nombre": "hornado_con_tortillas_jcv2ba",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/hornado_con_tortillas_jcv2ba.webp"
-    }
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Humita",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Café",
-    "Nombre": "Infusión",
-    "Precio": "1,40€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Llapingacho",
-    "Precio": "14,50€",
-    "Ingredientes": "Llapingachos, chorizo, ternera, salsa de maní, huevo frito, aguacate, ensalada",
-    "Días": "F",
-    "img": {
-      "nombre": "llapingacho_zlzbwg",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/llapingacho_zlzbwg.webp"
+    "id": "apanado",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Apanado",
+      "en": "Breaded Beef Cutlet"
     },
-    "img1": {
-      "nombre": "llapingacho_2_yboank",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_2_yboank.webp"
+    "price": 9.5,
+    "ingredients": {
+      "es": [
+        "Ternera apanada",
+        "arroz",
+        "patatas",
+        "ensalada",
+        "aguacate"
+      ],
+      "en": [
+        "Breaded beef",
+        "rice",
+        "potatoes",
+        "salad",
+        "avocado"
+      ]
     },
-    "img2": {
-      "nombre": "llapingacho_3_adw7nm",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140015/santjhoane/llapingacho_3_adw7nm.webp"
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "apanado_2_qqxsrb",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140001/santjhoane/apanado_2_qqxsrb.webp"
+      }
     }
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Llapingacho",
-    "Precio": "5,00€",
-    "Ingredientes": "",
-    "Días": "F"
-  },
-  {
-    "Tipo": "Porción",
-    "Nombre": "Maduro",
-    "Precio": "4,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Entrantes|Desayuno",
-    "Nombre": "Maduro con queso",
-    "Precio": "6,50€",
-    "Ingredientes": "Plátano maduro frito, queso latino",
-    "Días": "",
-    "img": {
-      "nombre": "maduro_con_queso_2_f2fknl",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140017/santjhoane/maduro_con_queso_2_f2fknl.webp"
+    "id": "aquarius-naranja-limon",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Aquarius (naranja - limón)",
+      "en": "Aquarius (orange - lemon)"
     },
-    "img1": {
-      "nombre": "maduro_con_queso_dmyefq",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140016/santjhoane/maduro_con_queso_dmyefq.webp"
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "arepa-con-chorizo-y-queso",
+    "category": [
+      "breakfast",
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Arepa con chorizo y queso",
+      "en": "Arepa with Chorizo and Cheese"
+    },
+    "price": 7,
+    "ingredients": {
+      "es": [
+        "Arepa de maíz",
+        "chorizo",
+        "queso latino"
+      ],
+      "en": [
+        "Corn arepa",
+        "chorizo",
+        "Latin cheese"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "arroz",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Arroz",
+      "en": "Rice"
+    },
+    "price": 3.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "arroz-con-camarones",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Arroz con camarones",
+      "en": "Shrimp Fried Rice"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Arroz frito con camarones",
+        "verduras",
+        "maduro frito"
+      ],
+      "en": [
+        "Fried rice with shrimp",
+        "vegetables",
+        "fried sweet plantain"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "arroz_con_camaron_voc5vg",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140002/santjhoane/arroz_con_camaron_voc5vg.webp"
+      }
     }
   },
   {
-    "Tipo": "Batidos",
-    "Nombre": "Mango",
-    "Precio": "4,50€",
-    "Ingredientes": "leche",
-    "Días": ""
+    "id": "bandeja-paisa",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bandeja paisa",
+      "en": "Bandeja Paisa"
+    },
+    "price": 15.9,
+    "ingredients": {
+      "es": [
+        "Arroz",
+        "frijoles (menestra)",
+        "huevo",
+        "chorizo",
+        "arepa",
+        "chicharrón (fritada)",
+        "maduro",
+        "aguacate"
+      ],
+      "en": [
+        "Rice",
+        "beans (stew)",
+        "egg",
+        "chorizo",
+        "arepa",
+        "chicharrón (fried pork)",
+        "sweet plantain",
+        "avocado"
+      ]
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Batidos",
-    "Nombre": "Mango",
-    "Precio": "4,00€",
-    "Ingredientes": "agua",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con apanado",
-    "Precio": "9,50€",
-    "Ingredientes": "Ternera apanada, arroz, patacones, menestra",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con camarones apanados",
-    "Precio": "13,50€",
-    "Ingredientes": "Camarones apanados, arroz, patacones, menestra",
-    "Días": "",
-    "img": {
-      "nombre": "menestra_camarones_diaqks",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_camarones_diaqks.webp"
+    "id": "bandera",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bandera",
+      "en": "Bandera Platter"
+    },
+    "price": 13.5,
+    "ingredients": {
+      "es": [
+        "Arroz",
+        "guatita",
+        "ceviche",
+        "ternera guisada"
+      ],
+      "en": [
+        "Rice",
+        "guatita",
+        "ceviche",
+        "braised beef"
+      ]
+    },
+    "availableDays": [
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "bandera_2_lljvx4",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140003/santjhoane/bandera_2_lljvx4.webp"
+      }
     }
   },
   {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con carne",
-    "Precio": "9,50€",
-    "Ingredientes": "Ternera a la plancha, arroz, patacones, menestra",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con chorizo y huevos",
-    "Precio": "9,50€",
-    "Ingredientes": "Chorizo criollo, arroz, huevos fritos, patacones, menestra",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con fritada",
-    "Precio": "10,50€",
-    "Ingredientes": "Fritada, arroz, patacones, menestra",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con hornado",
-    "Precio": "11,00€",
-    "Ingredientes": "Hornado, arroz, patacones, menestra",
-    "Días": "",
-    "img": {
-      "nombre": "menestra_hornado_j9k3w2",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_hornado_j9k3w2.webp"
+    "id": "bandera-completa",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bandera completa",
+      "en": "Full Bandera Platter"
+    },
+    "price": 16.5,
+    "ingredients": {
+      "es": [
+        "Arroz",
+        "guatita",
+        "ceviche",
+        "ternera guisada",
+        "encebollado"
+      ],
+      "en": [
+        "Rice",
+        "guatita",
+        "ceviche",
+        "braised beef",
+        "encebollado"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "bandera_completa_k73pgx",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140004/santjhoane/bandera_completa_k73pgx.webp"
+      }
     }
   },
   {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con lomo",
-    "Precio": "9,00€",
-    "Ingredientes": "Chuleta de cerdo, arroz, patacones, menestra",
-    "Días": ""
+    "id": "bolon-de-verde-con-huevo-frito",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bolón de verde con huevo frito",
+      "en": "Green Plantain Ball with Fried Egg"
+    },
+    "price": 5.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Combinados|Menestra",
-    "Nombre": "Menestra con pechuga",
-    "Precio": "9,00€",
-    "Ingredientes": "Pechuga a la plancha, arroz, patacones, menestra",
-    "Días": ""
+    "id": "bolon-de-verde-con-seco-de-carne-y-huevo-frito",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bolón de verde con seco de carne y huevo frito",
+      "en": "Green Plantain Ball with Braised Beef and Fried Egg"
+    },
+    "price": 9.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Menestra de frijoles",
-    "Precio": "5,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "bombon",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Bombón",
+      "en": "Bombón (Espresso with condensed milk)"
+    },
+    "price": 1.6,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Café",
-    "Nombre": "Milo",
-    "Precio": "2,60€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "cafe-con-leche",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Café con leche",
+      "en": "Coffee with Milk"
+    },
+    "price": 1.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Batidos",
-    "Nombre": "Mora",
-    "Precio": "4,50€",
-    "Ingredientes": "leche",
-    "Días": ""
+    "id": "cafe-cortado",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Café cortado",
+      "en": "Cortado"
+    },
+    "price": 1.3,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Batidos",
-    "Nombre": "Mora",
-    "Precio": "4,00€",
-    "Ingredientes": "agua",
-    "Días": ""
+    "id": "cafe-solo",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Café solo",
+      "en": "Black Coffee"
+    },
+    "price": 1.1,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Mote",
-    "Precio": "5,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "caldo-de-bola",
+    "category": [
+      "soups"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Caldo de bola",
+      "en": "Stuffed Plantain Soup"
+    },
+    "price": 11,
+    "ingredients": {
+      "es": [
+        "Carne de ternera",
+        "bola de plátano verde",
+        "yuca",
+        "col",
+        "choclo",
+        "plátano verde"
+      ],
+      "en": [
+        "Beef",
+        "green plantain ball",
+        "yuca",
+        "cabbage",
+        "corn",
+        "green plantain"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ]
   },
   {
-    "Tipo": "Desayuno|Entrantes",
-    "Nombre": "Mote con chicharrón",
-    "Precio": "7,50€",
-    "Ingredientes": "Chorizo criollo, mote, ensalada",
-    "Días": "",
-    "img": {
-      "nombre": "mote_chicharrón_zuvjcx",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/mote_chicharr%C3%B3n_zuvjcx.webp"
+    "id": "calentado-de-frijoles-con-carne",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Calentado de frijoles con carne",
+      "en": "Warm Bean Bowl with Beef"
+    },
+    "price": 7,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "calentado-de-frijoles-con-huevo-frito",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Calentado de frijoles con huevo frito",
+      "en": "Warm Bean Bowl with Fried Egg"
+    },
+    "price": 5.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "camarones-apanados",
+    "category": [
+      "combo-platters",
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Camarones apanados",
+      "en": "Breaded Shrimp"
+    },
+    "price": 13.5,
+    "ingredients": {
+      "es": [
+        "Camarones apanados",
+        "patatas fritas",
+        "ensalada"
+      ],
+      "en": [
+        "Breaded shrimp",
+        "french fries",
+        "salad"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "camarones_conn_patatas_cxrjwp",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/camarones_conn_patatas_cxrjwp.webp"
+      }
     }
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Nestea/FuzeTea",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "carajillo-de-conac",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Carajillo de coñac",
+      "en": "Carajillo with Brandy"
+    },
+    "price": 1.4,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Entrantes|Desayuno",
-    "Nombre": "Papas con huevo",
-    "Precio": "4,90€",
-    "Ingredientes": "Patatas fritas, huevo frito, ketchup, mayonesa",
-    "Días": ""
+    "id": "cerveza-amstel-1-3",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Amstel 1/3",
+      "en": "Amstel Beer 1/3"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Entrantes|Desayuno",
-    "Nombre": "Papas con todo",
-    "Precio": "8,50€",
-    "Ingredientes": "Patatas fritas, salchichas, ternera, huevo frito, ketchup, mayonesa",
-    "Días": ""
+    "id": "cerveza-coronita-1-3",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Coronita 1/3",
+      "en": "Coronita Beer 1/3"
+    },
+    "price": 2.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Entrantes|Desayuno",
-    "Nombre": "Papi carne",
-    "Precio": "6,50€",
-    "Ingredientes": "Patatas fritas, filete de ternera, ketchup, mayonesa",
-    "Días": ""
+    "id": "cerveza-heineken-1-3",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Heineken 1/3",
+      "en": "Heineken Beer 1/3"
+    },
+    "price": 2.2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Entrantes",
-    "Nombre": "Papi pollo",
-    "Precio": "6,50€",
-    "Ingredientes": "Patatas fritas, pechuga a la plancha, ketchup, mayonesa",
-    "Días": "",
-    "img": {
-      "nombre": "papi_pollo_c6llus",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140020/santjhoane/papi_pollo_c6llus.webp"
+    "id": "cerveza-pilsener",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Pilsener",
+      "en": "Pilsener Beer"
+    },
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "cerveza-radler-1-3",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Radler 1/3",
+      "en": "Radler Beer 1/3"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "cerveza-sin-alc",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Cerveza Sin Alc",
+      "en": "Non-Alcoholic Beer"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "ceviche",
+    "category": [
+      "soups"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Ceviche",
+      "en": "Ceviche"
+    },
+    "price": 10,
+    "ingredients": {
+      "es": [
+        "Gambas",
+        "tomate",
+        "cebolla",
+        "limón",
+        "chifles"
+      ],
+      "en": [
+        "Shrimp",
+        "tomato",
+        "onion",
+        "lime",
+        "green plantain chips"
+      ]
+    },
+    "availableDays": [
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "ceviche_otlsiy",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140006/santjhoane/ceviche_otlsiy.webp"
+      }
     }
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Patacón",
-    "Precio": "4,50€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "chaulafan-arroz-chino",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Chaulafán (Arroz chino)",
+      "en": "Chaulafan (Ecuadorian Fried Rice)"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Ternera",
+        "lomo de cerdo",
+        "pollo",
+        "camarones",
+        "verduras",
+        "maduro"
+      ],
+      "en": [
+        "Beef",
+        "pork loin",
+        "chicken",
+        "shrimp",
+        "vegetables",
+        "sweet plantain"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ]
   },
   {
-    "Tipo": "Entrantes",
-    "Nombre": "Patacón con queso",
-    "Precio": "6,50€",
-    "Ingredientes": "Patacón de plátano verde, queso latino",
-    "Días": "",
-    "img": {
-      "nombre": "patacon_queso_b2j8cs",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140021/santjhoane/patacon_queso_b2j8cs.webp"
+    "id": "choclo-con-queso",
+    "category": [
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Choclo con queso",
+      "en": "Corn on the Cob with Cheese"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [
+        "Mazorca de maíz",
+        "queso latino"
+      ],
+      "en": [
+        "Corn on the cob",
+        "Latin cheese"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "churrasco",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Churrasco",
+      "en": "Churrasco Steak"
+    },
+    "price": 9.5,
+    "ingredients": {
+      "es": [
+        "Ternera a la plancha",
+        "arroz",
+        "patata",
+        "huevo frito",
+        "ensalada",
+        "aguacate"
+      ],
+      "en": [
+        "Grilled beef steak",
+        "rice",
+        "potato",
+        "fried egg",
+        "salad",
+        "avocado"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "churrasco_megi2b",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140007/santjhoane/churrasco_megi2b.webp"
+      }
     }
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Patatas fritas",
-    "Precio": "4,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "coca-cola-350ml",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Coca Cola 350ml",
+      "en": "Coca Cola 350ml"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Combinados|Entrantes",
-    "Nombre": "Picada",
-    "Precio": "15,50€",
-    "Ingredientes": "Chorizo blanco y rojo, yuca, carne de cerdo, alitas, maduro",
-    "Días": ""
+    "id": "colacao",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Colacao",
+      "en": "Colacao (Hot Chocolate)"
+    },
+    "price": 1.8,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Combinados|Entrantes",
-    "Nombre": "Plato combinado",
-    "Precio": "11,50€",
-    "Ingredientes": "Ternera, chicharrón, patacón, queso, ensalada",
-    "Días": "",
-    "img": {
-      "nombre": "plato_combinado_t0g3pu",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140022/santjhoane/plato_combinado_t0g3pu.webp"
+    "id": "copa-de-vino-tinto-blanco",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Copa de Vino (tinto - blanco)",
+      "en": "Glass of Wine (red - white)"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "dorada",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Dorada",
+      "en": "Fried Golden Snapper"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Dorada frita",
+        "patacones",
+        "yuca",
+        "ensalada"
+      ],
+      "en": [
+        "Fried golden snapper",
+        "green plantain chips",
+        "yuca",
+        "salad"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "dorada_ipsani",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140008/santjhoane/dorada_ipsani.webp"
+      }
     }
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Ponny Malta",
-    "Precio": "2,20€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "dorada-con-arroz",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Dorada con arroz",
+      "en": "Golden Snapper with Rice"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Dorada frita",
+        "patatas",
+        "arroz",
+        "ensalada"
+      ],
+      "en": [
+        "Fried golden snapper",
+        "potatoes",
+        "rice",
+        "salad"
+      ]
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Postobón (uva - manzana) peq",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "dorada-con-menestra",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Dorada con menestra",
+      "en": "Golden Snapper with Bean Stew"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Dorada frita",
+        "arroz",
+        "menestra",
+        "patacones"
+      ],
+      "en": [
+        "Fried golden snapper",
+        "rice",
+        "bean stew",
+        "green plantain chips"
+      ]
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Queso",
-    "Precio": "4,50€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "empanada",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Empanada",
+      "en": "Empanada"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Entrantes|Desayuno",
-    "Nombre": "Salchipapa",
-    "Precio": "4,90€",
-    "Ingredientes": "Patatas fritas, salchichas, ketchup, mayonesa",
-    "Días": ""
-  },
-  {
-    "Tipo": "Sopas",
-    "Nombre": "Sancocho de costilla",
-    "Precio": "9,00€",
-    "Ingredientes": "Carne de ternera, yuca, choclo, plátano verde",
-    "Días": "F"
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Sandwich mixto",
-    "Precio": "3,50€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Bebida",
-    "Nombre": "Sangría",
-    "Precio": "11,00€",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Combinados",
-    "Nombre": "Seco de carne",
-    "Precio": "9,00€",
-    "Ingredientes": "Ternera guisada, arroz, maduro, aguacate",
-    "Días": "",
-    "img": {
-      "nombre": "seco_carne_y36wqe",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140023/santjhoane/seco_carne_y36wqe.webp"
+    "id": "encebollado",
+    "category": [
+      "soups"
+    ],
+    "isFeatured": true,
+    "name": {
+      "es": "Encebollado",
+      "en": "Encebollado (Ecuadorian Fish Soup)"
+    },
+    "price": 10,
+    "ingredients": {
+      "es": [
+        "Pescado",
+        "yuca",
+        "cebolla",
+        "tomate",
+        "cilantro",
+        "limón",
+        "chifles"
+      ],
+      "en": [
+        "Fish",
+        "yuca",
+        "onion",
+        "tomato",
+        "cilantro",
+        "lime",
+        "green plantain chips"
+      ]
+    },
+    "availableDays": [
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "encebollado_lbssmc",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140009/santjhoane/encebollado_lbssmc.webp"
+      },
+      "featured": {
+        "name": "encebollado_featured",
+        "url": "/images/encebollado.webp"
+      }
     }
   },
   {
-    "Tipo": "Postre",
-    "Nombre": "Tarta de chocolate",
-    "Precio": "",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Postre",
-    "Nombre": "Tarta de dulce de leche",
-    "Precio": "",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Postre",
-    "Nombre": "Tarta de mango",
-    "Precio": "",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Postre",
-    "Nombre": "Tarta de queso con arándanos",
-    "Precio": "",
-    "Ingredientes": "",
-    "Días": ""
-  },
-  {
-    "Tipo": "Desayuno",
-    "Nombre": "Tigrillo con huevo frito",
-    "Precio": "7,50€",
-    "Ingredientes": "",
-    "Días": "",
-    "img": {
-      "nombre": "tigrillo_ydvws8",
-      "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140024/santjhoane/tigrillo_ydvws8.webp"
+    "id": "encebollado-mixto",
+    "category": [
+      "soups"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Encebollado Mixto",
+      "en": "Mixed Encebollado"
+    },
+    "price": 13.9,
+    "ingredients": {
+      "es": [
+        "Encebollado con ceviche de camarón"
+      ],
+      "en": [
+        "Encebollado with shrimp ceviche"
+      ]
+    },
+    "availableDays": [
+      "friday",
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "encebollado_mixto_rm4pe7",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140010/santjhoane/encebollado_mixto_rm4pe7.webp"
+      }
     }
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Tónica",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "ensalada",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Ensalada",
+      "en": "Salad"
+    },
+    "price": 3.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Tropical",
-    "Precio": "2,00€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "ensalada-completa",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Ensalada Completa",
+      "en": "Full Salad"
+    },
+    "price": 7,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Porción",
-    "Nombre": "Yuca",
-    "Precio": "5,50€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "fanta",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Fanta",
+      "en": "Fanta"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   },
   {
-    "Tipo": "Bebida",
-    "Nombre": "Zumo (melocotón - piña - naranja)",
-    "Precio": "1,80€",
-    "Ingredientes": "",
-    "Días": ""
+    "id": "fritada",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Fritada",
+      "en": "Fritada (Ecuadorian Pork Platter)"
+    },
+    "price": 11.5,
+    "ingredients": {
+      "es": [
+        "Carne de cerdo",
+        "mote",
+        "patata cocida",
+        "maduro frito",
+        "ensalada"
+      ],
+      "en": [
+        "Pork chunks",
+        "hominy corn",
+        "boiled potato",
+        "fried sweet plantain",
+        "salad"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "fritada_fknle4",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140011/santjhoane/fritada_fknle4.webp"
+      }
+    }
+  },
+  {
+    "id": "fritada-completa",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Fritada completa",
+      "en": "Full Fritada Platter"
+    },
+    "price": 16.9,
+    "ingredients": {
+      "es": [
+        "Carne de cerdo",
+        "mote",
+        "patata",
+        "queso",
+        "choclo",
+        "tostado",
+        "maduro frito",
+        "ensalada"
+      ],
+      "en": [
+        "Pork chunks",
+        "hominy corn",
+        "potato",
+        "cheese",
+        "corn",
+        "toasted corn",
+        "fried sweet plantain",
+        "salad"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "fritada-con-choclo",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Fritada con choclo",
+      "en": "Fritada with Corn"
+    },
+    "price": 10,
+    "ingredients": {
+      "es": [
+        "Fritada de cerdo",
+        "mazorca de maíz",
+        "ensalada"
+      ],
+      "en": [
+        "Fried pork",
+        "corn on the cob",
+        "salad"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "guanabana",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Guanabana",
+      "en": "Soursop Smoothie"
+    },
+    "price": 5.5,
+    "ingredients": {
+      "es": [
+        "leche"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "guanabana-agua",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Guanabana",
+      "en": "Soursop Smoothie"
+    },
+    "price": 5,
+    "ingredients": {
+      "es": [
+        "agua"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "guatita",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Guatita",
+      "en": "Guatita (Tripe Stew)"
+    },
+    "price": 5.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ]
+  },
+  {
+    "id": "guiso-de-ternera",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Guiso de ternera",
+      "en": "Beef Stew"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "helado",
+    "category": [
+      "desserts"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Helado",
+      "en": "Ice Cream"
+    },
+    "price": 1.7,
+    "ingredients": {
+      "es": [
+        "coco - mora - tres sabores"
+      ],
+      "en": [
+        "coconut - blackberry - three flavors"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "hornado",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": true,
+    "name": {
+      "es": "Hornado",
+      "en": "Hornado (Ecuadorian Roast Pork)"
+    },
+    "price": 12.9,
+    "ingredients": {
+      "es": [
+        "Cerdo al horno",
+        "patata cocida",
+        "maduro",
+        "mote",
+        "ensalada"
+      ],
+      "en": [
+        "Roast pork",
+        "boiled potato",
+        "sweet plantain",
+        "hominy corn",
+        "salad"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "hornado_lvdp1k",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140012/santjhoane/hornado_lvdp1k.webp"
+      },
+      "featured": {
+        "name": "hornado_featured",
+        "url": "/images/hornado.webp"
+      }
+    }
+  },
+  {
+    "id": "hornado-con-tortillas",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": true,
+    "name": {
+      "es": "Hornado con tortillas",
+      "en": "Hornado with Potato Patties"
+    },
+    "price": 14.9,
+    "ingredients": {
+      "es": [
+        "Cerdo al horno",
+        "llapingachos",
+        "maduro",
+        "mote",
+        "ensalada",
+        "aguacate"
+      ],
+      "en": [
+        "Roast pork",
+        "llapingachos",
+        "sweet plantain",
+        "hominy corn",
+        "salad",
+        "avocado"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "hornado_con_tortillas_jcv2ba",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/hornado_con_tortillas_jcv2ba.webp"
+      },
+      "featured": {
+        "name": "hornado-con-tortillas_featured",
+        "url": "/images/hornado-tortillas.webp"
+      }
+    }
+  },
+  {
+    "id": "humita",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Humita",
+      "en": "Humita (Sweet Corn Tamale)"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "infusion",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Infusión",
+      "en": "Herbal Tea"
+    },
+    "price": 1.4,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "llapingacho",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": true,
+    "name": {
+      "es": "Llapingacho",
+      "en": "Llapingacho"
+    },
+    "price": 14.5,
+    "ingredients": {
+      "es": [
+        "Llapingachos",
+        "chorizo",
+        "ternera",
+        "salsa de maní",
+        "huevo frito",
+        "aguacate",
+        "ensalada"
+      ],
+      "en": [
+        "Llapingachos",
+        "chorizo",
+        "beef",
+        "peanut sauce",
+        "fried egg",
+        "avocado",
+        "salad"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ],
+    "images": {
+      "default": {
+        "name": "llapingacho_zlzbwg",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140014/santjhoane/llapingacho_zlzbwg.webp"
+      },
+      "featured": {
+        "name": "llapingacho_featured",
+        "url": "/images/llapingacho.webp"
+      }
+    }
+  },
+  {
+    "id": "llapingacho-side",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Llapingacho",
+      "en": "Llapingacho"
+    },
+    "price": 5,
+    "ingredients": {
+      "es": [],
+      "en": [
+        "Llapingachos",
+        "chorizo",
+        "beef",
+        "peanut sauce",
+        "fried egg",
+        "avocado",
+        "salad"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ]
+  },
+  {
+    "id": "maduro",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Maduro",
+      "en": "Fried Sweet Plantain"
+    },
+    "price": 4.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "maduro-con-queso",
+    "category": [
+      "starters",
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Maduro con queso",
+      "en": "Fried Sweet Plantain with Cheese"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [
+        "Plátano maduro frito",
+        "queso latino"
+      ],
+      "en": [
+        "Fried sweet plantain",
+        "Latin cheese"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "maduro_con_queso_2_f2fknl",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140017/santjhoane/maduro_con_queso_2_f2fknl.webp"
+      }
+    }
+  },
+  {
+    "id": "mango",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mango",
+      "en": "Mango Smoothie"
+    },
+    "price": 4.5,
+    "ingredients": {
+      "es": [
+        "leche"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "mango-agua",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mango",
+      "en": "Mango Smoothie"
+    },
+    "price": 4,
+    "ingredients": {
+      "es": [
+        "agua"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-apanado",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con apanado",
+      "en": "Breaded Cutlet with Bean Stew"
+    },
+    "price": 9.5,
+    "ingredients": {
+      "es": [
+        "Ternera apanada",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Breaded beef",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-camarones-apanados",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con camarones apanados",
+      "en": "Breaded Shrimp with Bean Stew"
+    },
+    "price": 13.5,
+    "ingredients": {
+      "es": [
+        "Camarones apanados",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Breaded shrimp",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "menestra_camarones_diaqks",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_camarones_diaqks.webp"
+      }
+    }
+  },
+  {
+    "id": "menestra-con-carne",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con carne",
+      "en": "Beef with Bean Stew"
+    },
+    "price": 9.5,
+    "ingredients": {
+      "es": [
+        "Ternera a la plancha",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Grilled beef",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-chorizo-y-huevos",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con chorizo y huevos",
+      "en": "Chorizo and Eggs with Bean Stew"
+    },
+    "price": 9.5,
+    "ingredients": {
+      "es": [
+        "Chorizo criollo",
+        "arroz",
+        "huevos fritos",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Criollo chorizo",
+        "rice",
+        "fried eggs",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-fritada",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con fritada",
+      "en": "Fritada with Bean Stew"
+    },
+    "price": 10.5,
+    "ingredients": {
+      "es": [
+        "Fritada",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Fritada",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-hornado",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con hornado",
+      "en": "Hornado with Bean Stew"
+    },
+    "price": 11,
+    "ingredients": {
+      "es": [
+        "Hornado",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Hornado",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "menestra_hornado_j9k3w2",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/menestra_hornado_j9k3w2.webp"
+      }
+    }
+  },
+  {
+    "id": "menestra-con-lomo",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con lomo",
+      "en": "Pork Loin with Bean Stew"
+    },
+    "price": 9,
+    "ingredients": {
+      "es": [
+        "Chuleta de cerdo",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Pork chop",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-con-pechuga",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra con pechuga",
+      "en": "Chicken Breast with Bean Stew"
+    },
+    "price": 9,
+    "ingredients": {
+      "es": [
+        "Pechuga a la plancha",
+        "arroz",
+        "patacones",
+        "menestra"
+      ],
+      "en": [
+        "Grilled chicken breast",
+        "rice",
+        "green plantain chips",
+        "bean stew"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "menestra-de-frijoles",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Menestra de frijoles",
+      "en": "Bean Stew (Side)"
+    },
+    "price": 5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "milo",
+    "category": [
+      "coffee"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Milo",
+      "en": "Milo"
+    },
+    "price": 2.6,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "mora",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mora",
+      "en": "Blackberry Smoothie"
+    },
+    "price": 4.5,
+    "ingredients": {
+      "es": [
+        "leche"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "mora-agua",
+    "category": [
+      "smoothies"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mora",
+      "en": "Blackberry Smoothie"
+    },
+    "price": 4,
+    "ingredients": {
+      "es": [
+        "agua"
+      ],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "mote",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mote",
+      "en": "Hominy Corn"
+    },
+    "price": 5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "mote-con-chicharron",
+    "category": [
+      "breakfast",
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Mote con chicharrón",
+      "en": "Hominy Corn with Fried Pork"
+    },
+    "price": 7.5,
+    "ingredients": {
+      "es": [
+        "Chorizo criollo",
+        "mote",
+        "ensalada"
+      ],
+      "en": [
+        "Criollo chorizo",
+        "hominy corn",
+        "salad"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "mote_chicharrón_zuvjcx",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140019/santjhoane/mote_chicharr%C3%B3n_zuvjcx.webp"
+      }
+    }
+  },
+  {
+    "id": "nestea-fuzetea",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Nestea/FuzeTea",
+      "en": "Nestea/FuzeTea"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "papas-con-huevo",
+    "category": [
+      "starters",
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Papas con huevo",
+      "en": "Fries with Egg"
+    },
+    "price": 4.9,
+    "ingredients": {
+      "es": [
+        "Patatas fritas",
+        "huevo frito",
+        "ketchup",
+        "mayonesa"
+      ],
+      "en": [
+        "French fries",
+        "fried egg",
+        "ketchup",
+        "mayonnaise"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "papas-con-todo",
+    "category": [
+      "starters",
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Papas con todo",
+      "en": "Loaded Fries"
+    },
+    "price": 8.5,
+    "ingredients": {
+      "es": [
+        "Patatas fritas",
+        "salchichas",
+        "ternera",
+        "huevo frito",
+        "ketchup",
+        "mayonesa"
+      ],
+      "en": [
+        "French fries",
+        "sausages",
+        "beef",
+        "fried egg",
+        "ketchup",
+        "mayonnaise"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "papi-carne",
+    "category": [
+      "starters",
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Papi carne",
+      "en": "Beef Fries"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [
+        "Patatas fritas",
+        "filete de ternera",
+        "ketchup",
+        "mayonesa"
+      ],
+      "en": [
+        "French fries",
+        "beef steak",
+        "ketchup",
+        "mayonnaise"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "papi-pollo",
+    "category": [
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Papi pollo",
+      "en": "Chicken Fries"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [
+        "Patatas fritas",
+        "pechuga a la plancha",
+        "ketchup",
+        "mayonesa"
+      ],
+      "en": [
+        "French fries",
+        "grilled chicken breast",
+        "ketchup",
+        "mayonnaise"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "papi_pollo_c6llus",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140020/santjhoane/papi_pollo_c6llus.webp"
+      }
+    }
+  },
+  {
+    "id": "patacon",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Patacón",
+      "en": "Green Plantain Chips"
+    },
+    "price": 4.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "patacon-con-queso",
+    "category": [
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Patacón con queso",
+      "en": "Green Plantain Chips with Cheese"
+    },
+    "price": 6.5,
+    "ingredients": {
+      "es": [
+        "Patacón de plátano verde",
+        "queso latino"
+      ],
+      "en": [
+        "Green plantain chips",
+        "Latin cheese"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "patacon_queso_b2j8cs",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140021/santjhoane/patacon_queso_b2j8cs.webp"
+      }
+    }
+  },
+  {
+    "id": "patatas-fritas",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Patatas fritas",
+      "en": "French Fries"
+    },
+    "price": 4,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "picada",
+    "category": [
+      "combo-platters",
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Picada",
+      "en": "Mixed Platter"
+    },
+    "price": 15.5,
+    "ingredients": {
+      "es": [
+        "Chorizo blanco y rojo",
+        "yuca",
+        "carne de cerdo",
+        "alitas",
+        "maduro"
+      ],
+      "en": [
+        "White and red chorizo",
+        "yuca",
+        "pork",
+        "chicken wings",
+        "sweet plantain"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "plato-combinado",
+    "category": [
+      "combo-platters",
+      "starters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Plato combinado",
+      "en": "Mixed Plate"
+    },
+    "price": 11.5,
+    "ingredients": {
+      "es": [
+        "Ternera",
+        "chicharrón",
+        "patacón",
+        "queso",
+        "ensalada"
+      ],
+      "en": [
+        "Beef",
+        "chicharrón",
+        "green plantain chips",
+        "cheese",
+        "salad"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "plato_combinado_t0g3pu",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140022/santjhoane/plato_combinado_t0g3pu.webp"
+      }
+    }
+  },
+  {
+    "id": "ponny-malta",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Ponny Malta",
+      "en": "Pony Malta (Malt Drink)"
+    },
+    "price": 2.2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "postobon-uva-manzana-peq",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Postobón (uva - manzana) peq",
+      "en": "Postobón (grape - apple) small"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "queso",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Queso",
+      "en": "Cheese (Side)"
+    },
+    "price": 4.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "salchipapa",
+    "category": [
+      "starters",
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Salchipapa",
+      "en": "Salchipapa (Sausage and Fries)"
+    },
+    "price": 4.9,
+    "ingredients": {
+      "es": [
+        "Patatas fritas",
+        "salchichas",
+        "ketchup",
+        "mayonesa"
+      ],
+      "en": [
+        "French fries",
+        "sausages",
+        "ketchup",
+        "mayonnaise"
+      ]
+    },
+    "availableDays": []
+  },
+  {
+    "id": "sancocho-de-costilla",
+    "category": [
+      "soups"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Sancocho de costilla",
+      "en": "Beef Rib Sancocho"
+    },
+    "price": 9,
+    "ingredients": {
+      "es": [
+        "Carne de ternera",
+        "yuca",
+        "choclo",
+        "plátano verde"
+      ],
+      "en": [
+        "Beef",
+        "yuca",
+        "corn",
+        "green plantain"
+      ]
+    },
+    "availableDays": [
+      "saturday",
+      "sunday"
+    ]
+  },
+  {
+    "id": "sandwich-mixto",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Sandwich mixto",
+      "en": "Mixed Sandwich"
+    },
+    "price": 3.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "sangria",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Sangría",
+      "en": "Sangria"
+    },
+    "price": 11,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "seco-de-carne",
+    "category": [
+      "combo-platters"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Seco de carne",
+      "en": "Braised Beef Seco"
+    },
+    "price": 9,
+    "ingredients": {
+      "es": [
+        "Ternera guisada",
+        "arroz",
+        "maduro",
+        "aguacate"
+      ],
+      "en": [
+        "Braised beef",
+        "rice",
+        "sweet plantain",
+        "avocado"
+      ]
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "seco_carne_y36wqe",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140023/santjhoane/seco_carne_y36wqe.webp"
+      }
+    }
+  },
+  {
+    "id": "tarta-de-chocolate",
+    "category": [
+      "desserts"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tarta de chocolate",
+      "en": "Chocolate Cake"
+    },
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "tarta-de-dulce-de-leche",
+    "category": [
+      "desserts"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tarta de dulce de leche",
+      "en": "Dulce de Leche Cake"
+    },
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "tarta-de-mango",
+    "category": [
+      "desserts"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tarta de mango",
+      "en": "Mango Cake"
+    },
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "tarta-de-queso-con-arandanos",
+    "category": [
+      "desserts"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tarta de queso con arándanos",
+      "en": "Blueberry Cheesecake"
+    },
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "tigrillo-con-huevo-frito",
+    "category": [
+      "breakfast"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tigrillo con huevo frito",
+      "en": "Tigrillo with Fried Egg"
+    },
+    "price": 7.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": [],
+    "images": {
+      "default": {
+        "name": "tigrillo_ydvws8",
+        "url": "http://res.cloudinary.com/santjhoane/image/upload/v1744140024/santjhoane/tigrillo_ydvws8.webp"
+      }
+    }
+  },
+  {
+    "id": "tonica",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tónica",
+      "en": "Tonic Water"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "tropical",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Tropical",
+      "en": "Tropical Soda"
+    },
+    "price": 2,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "yuca",
+    "category": [
+      "sides"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Yuca",
+      "en": "Yuca (Side)"
+    },
+    "price": 5.5,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
+  },
+  {
+    "id": "zumo-melocoton-pina-naranja",
+    "category": [
+      "beverages"
+    ],
+    "isFeatured": false,
+    "name": {
+      "es": "Zumo (melocotón - piña - naranja)",
+      "en": "Juice (peach - pineapple - orange)"
+    },
+    "price": 1.8,
+    "ingredients": {
+      "es": [],
+      "en": []
+    },
+    "availableDays": []
   }
 ]

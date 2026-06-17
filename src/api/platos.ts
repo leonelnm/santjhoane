@@ -1,45 +1,64 @@
 import data from "./data.json";
 
+const dishes = data as Dish[];
+
 export const CategoriasOrdenadas: CategoriaNombre = new Map([
-  ["Desayuno", "Desayunos"],
-  ["Entrantes", "Entrantes"],
-  ["Combinados", "Platos Combinados"],
-  ["Porción", "Porciones"],
-  ["Sopas", "Sopas"],
-  ["Batidos", "Batidos/Jugos"],
-  ["Postre", "Postres"],
-  ["Bebida", "Bebidas"],
-  ["Café", "Café"],
+  ["breakfast", "Desayunos"],
+  ["starters", "Entrantes"],
+  ["combo-platters", "Platos Combinados"],
+  ["sides", "Porciones"],
+  ["soups", "Sopas"],
+  ["smoothies", "Batidos/Jugos"],
+  ["desserts", "Postres"],
+  ["beverages", "Bebidas"],
+  ["coffee", "Café"],
 ]);
 
-export const getAllPlatos = async (): Promise<Plato[]> => {
-  return getPlatosFromJson(data);
+export const getAllPlatos = async (
+  lang: Lang = "es",
+): Promise<Plato[]> => {
+  return dishes.map((dish) => dishToPlato(dish, lang));
 };
 
 export const getPlatosByCategoria = async (
   tipo: Categoria,
+  lang: Lang = "es",
 ): Promise<Plato[]> => {
-  const platos = await getAllPlatos();
+  const platos = await getAllPlatos(lang);
   return platos.filter((plato) => plato.categoria.includes(tipo));
 };
 
-export const getMenuSectionsJsonLD = async (includePrices: boolean = false) => {
-  const platos = await getAllPlatos();
+export const getFeaturedPlatos = async (
+  lang: Lang = "es",
+): Promise<Plato[]> => {
+  return dishes
+    .filter((dish) => dish.isFeatured)
+    .map((dish) => dishToPlato(dish, lang));
+};
+
+export const getMenuSectionsJsonLD = async (
+  includePrices: boolean = false,
+  lang: Lang = "es",
+) => {
   return Array.from(CategoriasOrdenadas.entries()).map(
     ([categoriaKey, categoriaValue]) => {
-      const menuItems = platos
-        .filter((plato) => plato.categoria.includes(categoriaKey))
-        .map((plato) => ({
+      const menuItems = dishes
+        .filter((dish) => dish.category.includes(categoriaKey))
+        .map((dish) => ({
           "@type": "MenuItem",
-          name: plato.nombre,
-          description: plato.ingredientes,
-          ...(includePrices && {
-            offers: {
-              "@type": "Offer",
-              price: plato.precio,
-              priceCurrency: "EUR",
-            },
-          }),
+          name: dish.name[lang],
+          description:
+            dish.ingredients[lang].length > 0
+              ? dish.ingredients[lang].join(", ")
+              : undefined,
+          ...(includePrices &&
+            dish.price != null && {
+              offers: {
+                "@type": "Offer",
+                price: dish.price,
+                priceCurrency: "EUR",
+              },
+            }),
         }));
 
       return {
@@ -51,41 +70,22 @@ export const getMenuSectionsJsonLD = async (includePrices: boolean = false) => {
   );
 };
 
-const getPlatosFromJson = async (json: any): Promise<Plato[]> => {
-  if (json !== undefined) {
-    const platos = json.map((plato: any) => {
-      return objectToPlato(plato);
-    });
-    return platos;
-  }
-  return [];
-};
-
-const objectToPlato = (obj: any): Plato => {
-  const {
-    Tipo: tipo,
-    Nombre: nombre,
-    Precio: precio,
-    Ingredientes: ingredientes,
-    Días: dias,
-    img,
-    img2,
-    img3,
-  } = obj;
-
-  // convertir "Tipo": "Desayuno|Entrantes" en un array
-  const tiposArray = tipo.split("|").map((t: string) => t.trim() as Categoria);
-  // convertir "Dias": "V|F" en un array
-  const diasArray = dias ? dias.split("|").map((d: string) => d.trim()) : "";
+function dishToPlato(dish: Dish, lang: Lang): Plato {
+  const precio =
+    dish.price != null
+      ? dish.price.toFixed(2).replace(".", ",") + "€"
+      : "";
 
   return {
-    categoria: tiposArray,
-    nombre,
+    categoria: dish.category,
+    isFeatured: dish.isFeatured,
+    nombre: dish.name[lang],
     precio,
-    ingredientes,
-    dias: diasArray,
-    img,
-    img2,
-    img3,
+    ingredientes:
+      dish.ingredients[lang].length > 0
+        ? dish.ingredients[lang].join(", ")
+        : undefined,
+    dias: dish.availableDays.length > 0 ? dish.availableDays : undefined,
+    img: dish.images?.default,
   };
-};
+}

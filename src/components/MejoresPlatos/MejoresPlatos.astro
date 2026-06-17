@@ -1,5 +1,7 @@
 ---
-import platos from "./mejoresPlatos";
+import { getFeaturedPlatos } from "../../api/platos";
+
+const platos = await getFeaturedPlatos("es");
 ---
 
 <section class="py-20 px-4 max-w-7xl mx-auto">
@@ -17,27 +19,30 @@ import platos from "./mejoresPlatos";
     class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0 md:mx-0"
   >
     {
-      platos.map((dish) => (
-        <div class="min-w-[85vw] md:min-w-0 snap-center glass rounded-2xl overflow-hidden group hover:bg-white/5 transition duration-300">
-          <div class="h-64 overflow-hidden relative">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
-            <img
-              loading="lazy"
-              src={dish.imagen}
-              alt={`Imagen de ${dish.nombre}`}
-              class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700"
-            />
-            <div class="absolute bottom-0 left-0 p-6 z-20">
-              <h3 class="text-2xl font-bold text-white font-['Syne']">
-                {dish.nombre}
-              </h3>
+      platos.map((dish) => {
+        const featuredImg = dish.img?.url ?? "/images/placeholder.webp";
+        return (
+          <div class="min-w-[85vw] md:min-w-0 snap-center glass rounded-2xl overflow-hidden group hover:bg-white/5 transition duration-300">
+            <div class="h-64 overflow-hidden relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
+              <img
+                loading="lazy"
+                src={featuredImg}
+                alt={`Imagen de ${dish.nombre}`}
+                class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700"
+              />
+              <div class="absolute bottom-0 left-0 p-6 z-20">
+                <h3 class="text-2xl font-bold text-white font-['Syne']">
+                  {dish.nombre}
+                </h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-300 leading-relaxed">{dish.ingredientes}</p>
             </div>
           </div>
-          <div class="p-6">
-            <p class="text-gray-300 leading-relaxed">{dish.descripcion}</p>
-          </div>
-        </div>
-      ))
+        )
+      })
     }
   </div>
 
