@@ -1,5 +1,5 @@
 type Props = {
-    categorías: CategoriaNombre
+    categorías: CategoryName
     onSelect: (cat: string) => void
     seleccionada: string
 }

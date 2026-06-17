@@ -14,19 +14,19 @@ export default function Batidos({ batidos }: { batidos: Plato[] }) {
     const batidosTransformados: BatidoTransformado[] = [];
 
     batidos.forEach(batido => {
-        const existente = batidosTransformados.find(item => item.nombre === batido.nombre);
+        const existente = batidosTransformados.find(item => item.nombre === batido.name);
         const img = batido.img;
         const variante: Variante = {
-            ingredientes: batido.ingredientes && batido.ingredientes.charAt(0).toUpperCase() + batido.ingredientes.slice(1),
-            precio: batido.precio
+            ingredientes: batido.ingredients && batido.ingredients.charAt(0).toUpperCase() + batido.ingredients.slice(1),
+            precio: batido.price
         };
 
         if (existente) {
             existente.variantes.push(variante);
         } else {
             batidosTransformados.push({
-                nombre: batido.nombre,
-                categoria: batido.categoria[0],
+                nombre: batido.name,
+                categoria: batido.category[0],
                 variantes: [variante],
                 img
             });

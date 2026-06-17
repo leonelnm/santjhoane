@@ -1,7 +1,7 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
-type Categoria =
+type Category =
   | "breakfast"
   | "starters"
   | "combo-platters"
@@ -14,7 +14,7 @@ type Categoria =
 
 type Lang = "es" | "en";
 
-type CategoriaNombre = Map<Categoria, string>;
+type CategoryName = Map<Category, string>;
 
 type LocalizedString = Record<Lang, string>;
 
@@ -32,7 +32,7 @@ interface DishImages {
 
 interface Dish {
   id: string;
-  category: Categoria[];
+  category: Category[];
   isFeatured: boolean;
   name: LocalizedString;
   price?: number;
@@ -44,11 +44,11 @@ interface Dish {
 type Image = CloudinaryImage;
 
 type Plato = {
-  categoria: Categoria[];
+  category: Category[];
   isFeatured: boolean;
-  nombre: string;
-  precio: string;
-  ingredientes?: string;
-  dias?: string[];
+  name: string;
+  price: string;
+  ingredients?: string;
+  availableDays?: string[];
   img?: Image;
 };

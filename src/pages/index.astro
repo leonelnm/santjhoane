@@ -16,8 +16,8 @@ import { getFeaturedPlatos } from "../api/platos";
 const featured = await getFeaturedPlatos("es");
 const menuItems = featured.map((plato) => ({
   "@type": "MenuItem",
-  name: plato.nombre,
-  description: plato.ingredientes,
+  name: plato.name,
+  description: plato.ingredients,
 }));
 ---
 

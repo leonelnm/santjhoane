@@ -10,12 +10,12 @@ type Props = {
 export default function MenuVista({productos}: Props) {
   const [seleccionada, setSeleccionada] = useState('Todas')
   const filtrados = seleccionada === 'Todas' ? productos 
-    : productos.filter(plato => plato.categoria.includes(seleccionada as Categoria))
+    : productos.filter(plato => plato.category.includes(seleccionada as Category))
 
   return (
     <div class="flex flex-col gap-6 mt-4">
       <FiltroTipos categorías={CategoriasOrdenadas} seleccionada={seleccionada} onSelect={setSeleccionada} />
-      <MenuSection products={filtrados} title={CategoriasOrdenadas.get(seleccionada as Categoria) ?? 'Todas'} />
+      <MenuSection products={filtrados} title={CategoriasOrdenadas.get(seleccionada as Category) ?? 'Todas'} />
     </div>
   )
 }

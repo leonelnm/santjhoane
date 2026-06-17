@@ -5,9 +5,9 @@ import Plato from "./Plato";
 export default function MenuSection({ products, title }: { products: Plato[], title: string }) {
 
     if (title === 'Todas') {
-        const mapProductsByCategoria = new Map<Categoria, Plato[]>()
+        const mapProductsByCategoria = new Map<Category, Plato[]>()
         CategoriasOrdenadas.forEach((_, categoria) => {
-            mapProductsByCategoria.set(categoria, products.filter(plato => plato.categoria.includes(categoria)))
+            mapProductsByCategoria.set(categoria, products.filter(plato => plato.category.includes(categoria)))
         })
 
         return (

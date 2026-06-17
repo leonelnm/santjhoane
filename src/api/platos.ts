@@ -2,7 +2,7 @@ import data from "./data.json";
 
 const dishes = data as Dish[];
 
-export const CategoriasOrdenadas: CategoriaNombre = new Map([
+export const CategoriasOrdenadas: CategoryName = new Map([
   ["breakfast", "Desayunos"],
   ["starters", "Entrantes"],
   ["combo-platters", "Platos Combinados"],
@@ -14,18 +14,16 @@ export const CategoriasOrdenadas: CategoriaNombre = new Map([
   ["coffee", "Café"],
 ]);
 
-export const getAllPlatos = async (
-  lang: Lang = "es",
-): Promise<Plato[]> => {
+export const getAllPlatos = async (lang: Lang = "es"): Promise<Plato[]> => {
   return dishes.map((dish) => dishToPlato(dish, lang));
 };
 
 export const getPlatosByCategoria = async (
-  tipo: Categoria,
+  tipo: Category,
   lang: Lang = "es",
 ): Promise<Plato[]> => {
   const platos = await getAllPlatos(lang);
-  return platos.filter((plato) => plato.categoria.includes(tipo));
+  return platos.filter((plato) => plato.category.includes(tipo));
 };
 
 export const getFeaturedPlatos = async (
@@ -72,20 +70,19 @@ export const getMenuSectionsJsonLD = async (
 
 function dishToPlato(dish: Dish, lang: Lang): Plato {
   const precio =
-    dish.price != null
-      ? dish.price.toFixed(2).replace(".", ",") + "€"
-      : "";
+    dish.price != null ? dish.price.toFixed(2).replace(".", ",") + "€" : "";
 
   return {
-    categoria: dish.category,
+    category: dish.category,
     isFeatured: dish.isFeatured,
-    nombre: dish.name[lang],
-    precio,
-    ingredientes:
+    name: dish.name[lang],
+    price: precio,
+    ingredients:
       dish.ingredients[lang].length > 0
         ? dish.ingredients[lang].join(", ")
         : undefined,
-    dias: dish.availableDays.length > 0 ? dish.availableDays : undefined,
+    availableDays:
+      dish.availableDays.length > 0 ? dish.availableDays : undefined,
     img: dish.images?.default,
   };
 }
