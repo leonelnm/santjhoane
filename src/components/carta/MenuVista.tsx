@@ -4,7 +4,7 @@ import { CategoriasOrdenadas } from '../../api/platos'
 import MenuSection from './MenuSection.tsx'
 
 type Props = {
-  productos: Plato[]
+  productos: DishView[]
 }
 
 export default function MenuVista({productos}: Props) {

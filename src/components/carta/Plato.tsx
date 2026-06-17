@@ -1,4 +1,4 @@
-export default function Plato({ plato, includePrices = false }: { plato: Plato, includePrices?: boolean }) {
+export default function Plato({ plato, includePrices = false }: { plato: DishView, includePrices?: boolean }) {
     return (
         <article class="rounded-2xl glass border border-white/5 overflow-hidden hover:bg-white/5 transition-all duration-300 group">
             {

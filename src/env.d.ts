@@ -43,9 +43,7 @@ interface Dish {
 
 type Image = CloudinaryImage;
 
-type Plato = {
-  category: Category[];
-  isFeatured: boolean;
+type DishView = Omit<Dish, "id" | "name" | "price" | "ingredients" | "availableDays" | "images"> & {
   name: string;
   price: string;
   ingredients?: string;

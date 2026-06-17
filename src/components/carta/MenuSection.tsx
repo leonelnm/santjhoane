@@ -2,10 +2,10 @@ import { CategoriasOrdenadas } from "../../api/platos";
 import Batidos from "./Batidos";
 import Plato from "./Plato";
 
-export default function MenuSection({ products, title }: { products: Plato[], title: string }) {
+export default function MenuSection({ products, title }: { products: DishView[], title: string }) {
 
     if (title === 'Todas') {
-        const mapProductsByCategoria = new Map<Category, Plato[]>()
+        const mapProductsByCategoria = new Map<Category, DishView[]>()
         CategoriasOrdenadas.forEach((_, categoria) => {
             mapProductsByCategoria.set(categoria, products.filter(plato => plato.category.includes(categoria)))
         })
@@ -26,7 +26,7 @@ export default function MenuSection({ products, title }: { products: Plato[], ti
     )
 }
 
-function CategoriaPlatos({ categoria, platos }: { categoria: string, platos: Plato[] }) {
+function CategoriaPlatos({ categoria, platos }: { categoria: string, platos: DishView[] }) {
 
     return (
         <section class="flex flex-col gap-4">

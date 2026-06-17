@@ -10,7 +10,7 @@ interface BatidoTransformado {
     img?: Image;
 }
 
-export default function Batidos({ batidos }: { batidos: Plato[] }) {
+export default function Batidos({ batidos }: { batidos: DishView[] }) {
     const batidosTransformados: BatidoTransformado[] = [];
 
     batidos.forEach(batido => {

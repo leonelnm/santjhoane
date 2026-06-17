@@ -14,24 +14,24 @@ export const CategoriasOrdenadas: CategoryName = new Map([
   ["coffee", "Café"],
 ]);
 
-export const getAllPlatos = async (lang: Lang = "es"): Promise<Plato[]> => {
-  return dishes.map((dish) => dishToPlato(dish, lang));
+export const getAllPlatos = async (lang: Lang = "es"): Promise<DishView[]> => {
+  return dishes.map((dish) => toView(dish, lang));
 };
 
 export const getPlatosByCategoria = async (
   tipo: Category,
   lang: Lang = "es",
-): Promise<Plato[]> => {
+): Promise<DishView[]> => {
   const platos = await getAllPlatos(lang);
   return platos.filter((plato) => plato.category.includes(tipo));
 };
 
 export const getFeaturedPlatos = async (
   lang: Lang = "es",
-): Promise<Plato[]> => {
+): Promise<DishView[]> => {
   return dishes
     .filter((dish) => dish.isFeatured)
-    .map((dish) => dishToPlato(dish, lang));
+    .map((dish) => toView(dish, lang));
 };
 
 export const getMenuSectionsJsonLD = async (
@@ -68,7 +68,7 @@ export const getMenuSectionsJsonLD = async (
   );
 };
 
-function dishToPlato(dish: Dish, lang: Lang): Plato {
+function toView(dish: Dish, lang: Lang): DishView {
   const precio =
     dish.price != null ? dish.price.toFixed(2).replace(".", ",") + "€" : "";
 
