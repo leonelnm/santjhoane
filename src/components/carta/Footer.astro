@@ -1,9 +1,12 @@
 ---
+import { useTranslations } from "../../i18n/utils";
+
 const year = new Date().getFullYear();
+const t = useTranslations(Astro.currentLocale ?? "es");
 ---
 
 <footer class="mt-8 bg-[#78350f] text-white py-8 px-4">
   <div class="max-w-6xl mx-auto text-center">
-    <p>&copy; {year} Restaurante Sant Jhoane.</p>
+    <p>&copy; {year} {t("footer.copyright-menu").replace("{year}", String(year))}</p>
   </div>
 </footer>

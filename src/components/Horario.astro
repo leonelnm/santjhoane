@@ -1,12 +1,16 @@
 ---
+import { useTranslations } from "../i18n/utils";
+
+const t = useTranslations(Astro.currentLocale ?? "es");
+
 const days = [
-  { day: "Lunes", open: "09:00", close: "21:15" },
-  { day: "Martes", open: "09:00", close: "21:15" },
-  { day: "Miércoles", open: "09:00", close: "21:15" },
-  { day: "Jueves", open: "09:00", close: "21:15" },
-  { day: "Viernes", open: "09:00", close: "21:15" },
-  { day: "Sábado", open: "09:00", close: "21:15" },
-  { day: "Domingo y festivos", open: "09:00", close: "19:15" },
+  { key: "hours.mon", open: "09:00", close: "21:15" },
+  { key: "hours.tue", open: "09:00", close: "21:15" },
+  { key: "hours.wed", open: "09:00", close: "21:15" },
+  { key: "hours.thu", open: "09:00", close: "21:15" },
+  { key: "hours.fri", open: "09:00", close: "21:15" },
+  { key: "hours.sat", open: "09:00", close: "21:15" },
+  { key: "hours.sun", open: "09:00", close: "19:15" },
 ];
 ---
 
@@ -20,10 +24,10 @@ const days = [
   <div class="max-w-4xl mx-auto relative z-10">
     <div class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-bold text-white font-['Syne'] mb-4">
-        Nuestro Horario
+        {t("hours.title")}
       </h2>
       <p class="text-gray-400 font-['Outfit']">
-        Te esperamos con los mejores sabores
+        {t("hours.subtitle")}
       </p>
     </div>
 
@@ -52,7 +56,7 @@ const days = [
           days.map((item) => (
             <li class="flex justify-between items-center border-b border-white/5 pb-4 last:border-0 last:pb-0 hover:bg-white/5 p-2 rounded-lg transition duration-300">
               <span class="text-lg md:text-xl font-bold text-gray-200 font-['Syne']">
-                {item.day}
+                {t(item.key as any)}
               </span>
               <div class="flex items-center gap-3">
                 <span class="text-amber-500 font-['Outfit'] font-semibold">
@@ -70,7 +74,7 @@ const days = [
 
       <div class="mt-8 text-center pt-6 border-t border-white/10">
         <p class="text-sm text-gray-400 font-['Outfit']">
-          * Horarios sujetos a cambios en festivos especiales
+          {t("hours.note")}
         </p>
       </div>
     </div>

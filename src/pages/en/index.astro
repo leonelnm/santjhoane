@@ -1,18 +1,18 @@
 ---
-import Footer from "../components/Footer.astro";
-import MejoresPlatos from "../components/MejoresPlatos/MejoresPlatos.astro";
-import Horario from "../components/Horario.astro";
-import Layout from "../layouts/Layout.astro";
-import HeroVideo from "../components/HeroVideo.astro";
-import ContactoIcons from "../components/ContactoIcons.astro";
-import JsonLD from "../components/JsonLD.astro";
-import FAQ from "../components/FAQ.astro";
-import { info } from "../api/info";
-import { useTranslations } from "../i18n/utils";
-import { getFaqList } from "../api/faq";
-import { getFeaturedPlatos } from "../api/platos";
+import Footer from "../../components/Footer.astro";
+import MejoresPlatos from "../../components/MejoresPlatos/MejoresPlatos.astro";
+import Horario from "../../components/Horario.astro";
+import Layout from "../../layouts/Layout.astro";
+import HeroVideo from "../../components/HeroVideo.astro";
+import ContactoIcons from "../../components/ContactoIcons.astro";
+import JsonLD from "../../components/JsonLD.astro";
+import FAQ from "../../components/FAQ.astro";
+import { info } from "../../api/info";
+import { useTranslations } from "../../i18n/utils";
+import { getFaqList } from "../../api/faq";
+import { getFeaturedPlatos } from "../../api/platos";
 
-const lang = Astro.currentLocale ?? "es";
+const lang = Astro.currentLocale ?? "en";
 const t = useTranslations(lang);
 const featured = await getFeaturedPlatos(lang as Lang);
 const menuItems = featured.map((plato) => ({

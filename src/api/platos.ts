@@ -2,17 +2,41 @@ import data from "./data.json";
 
 const dishes = data as Dish[];
 
-export const CategoriasOrdenadas: CategoryName = new Map([
-  ["breakfast", "Desayunos"],
-  ["starters", "Entrantes"],
-  ["combo-platters", "Platos Combinados"],
-  ["sides", "Porciones"],
-  ["soups", "Sopas"],
-  ["smoothies", "Batidos/Jugos"],
-  ["desserts", "Postres"],
-  ["beverages", "Bebidas"],
-  ["coffee", "Café"],
-]);
+const categoriasData: Record<Lang, [Category, string][]> = {
+  es: [
+    ["breakfast", "Desayunos"],
+    ["starters", "Entrantes"],
+    ["combo-platters", "Platos Combinados"],
+    ["sides", "Porciones"],
+    ["soups", "Sopas"],
+    ["smoothies", "Batidos/Jugos"],
+    ["desserts", "Postres"],
+    ["beverages", "Bebidas"],
+    ["coffee", "Café"],
+  ],
+  en: [
+    ["breakfast", "Breakfast"],
+    ["starters", "Starters"],
+    ["combo-platters", "Combo Platters"],
+    ["sides", "Sides"],
+    ["soups", "Soups"],
+    ["smoothies", "Smoothies/Juices"],
+    ["desserts", "Desserts"],
+    ["beverages", "Beverages"],
+    ["coffee", "Coffee"],
+  ],
+};
+
+const categoriasMap: Record<Lang, CategoryName> = {
+  es: new Map(categoriasData.es),
+  en: new Map(categoriasData.en),
+};
+
+export const CategoriasOrdenadas: CategoryName = categoriasMap.es;
+
+export function getCategorias(lang: Lang = "es"): CategoryName {
+  return categoriasMap[lang];
+}
 
 export const getAllPlatos = async (lang: Lang = "es"): Promise<DishView[]> => {
   return dishes.map((dish) => toView(dish, lang));
@@ -38,7 +62,8 @@ export const getMenuSectionsJsonLD = async (
   includePrices: boolean = false,
   lang: Lang = "es",
 ) => {
-  return Array.from(CategoriasOrdenadas.entries()).map(
+  const cats = getCategorias(lang);
+  return Array.from(cats.entries()).map(
     ([categoriaKey, categoriaValue]) => {
       const menuItems = dishes
         .filter((dish) => dish.category.includes(categoriaKey))

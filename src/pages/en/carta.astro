@@ -1,13 +1,13 @@
 ---
-import ButtonReturnTop from "../components/carta/ButtonReturnTop.astro";
-import MenuMain from "../components/carta/MenuMain.astro";
-import Layout from "../layouts/Layout.astro";
-import JsonLD from "../components/JsonLD.astro";
-import { info } from "../api/info";
-import { useTranslations } from "../i18n/utils";
-import { getMenuSectionsJsonLD } from "../api/platos";
+import ButtonReturnTop from "../../components/carta/ButtonReturnTop.astro";
+import MenuMain from "../../components/carta/MenuMain.astro";
+import Layout from "../../layouts/Layout.astro";
+import JsonLD from "../../components/JsonLD.astro";
+import { info } from "../../api/info";
+import { useTranslations } from "../../i18n/utils";
+import { getMenuSectionsJsonLD } from "../../api/platos";
 
-const lang = Astro.currentLocale ?? "es";
+const lang = Astro.currentLocale ?? "en";
 const t = useTranslations(lang);
 const menuSections = await getMenuSectionsJsonLD(true, lang as Lang);
 ---
@@ -20,7 +20,7 @@ const menuSections = await getMenuSectionsJsonLD(true, lang as Lang);
       "@type": "Restaurant",
       ...info,
       image: [`${info.url}/favicon.webp`],
-      url: `${info.url}/carta`,
+      url: `${info.url}/en/carta`,
       hasMenu: {
         "@type": "Menu",
         name: t("jsonld.menu-name"),

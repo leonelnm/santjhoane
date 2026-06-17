@@ -1,7 +1,13 @@
 ---
+import { useTranslations, useTranslatedPath } from "../i18n/utils";
+
+const lang = Astro.currentLocale ?? "es";
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
 const data = {
   title: "Restaurante Sant Jhoane",
-  description: "Auténticos Sabores Ecuatorianos en Cada Bocado",
+  description: t("hero.description"),
   url_video_placeholder:
     "https://cdn.jsdelivr.net/gh/leonelnm/assets@main/public/video/video-placeholder-santjhoane.mp4",
   url_map: "https://maps.app.goo.gl/fPTwu5DGyFdq1csG7",
@@ -13,17 +19,36 @@ const data = {
   id="hero-section"
   class="relative h-screen flex items-center justify-center overflow-hidden"
 >
+  <!-- Language Switcher -->
+  <div
+    class="absolute top-4 right-4 z-20 flex gap-1 bg-black/40 backdrop-blur-md rounded-full border border-white/10 p-1"
+  >
+    <a
+      href={translatePath("/", "es")}
+      class={`px-3 py-1.5 text-xs font-bold rounded-full transition-all duration-300 ${lang === "es" ? "bg-amber-600 text-white" : "text-gray-400 hover:text-white"}`}
+      aria-label="Español"
+    >
+      ES
+    </a>
+    <a
+      href={translatePath("/", "en")}
+      class={`px-3 py-1.5 text-xs font-bold rounded-full transition-all duration-300 ${lang === "en" ? "bg-amber-600 text-white" : "text-gray-400 hover:text-white"}`}
+      aria-label="English"
+    >
+      EN
+    </a>
+  </div>
   <video
     id="hero-video"
     autoplay
     loop
     muted
     playsinline
-    aria-label="Video publicitario mostrando los platos, no contiene audio"
+    aria-label={t("hero.video-aria")}
     class="absolute inset-0 object-cover w-full h-full opacity-60"
   >
     <source src={data.url_video_placeholder} type="video/mp4" />
-    Tu navegador no soporta el video.
+    {t("hero.video-fallback")}
   </video>
 
   <!-- Gradient Overlay -->
@@ -40,7 +65,7 @@ const data = {
     >
       SANT <span class="text-amber-600">JHOAN'E</span><br />
       <span class="text-2xl md:text-4xl font-normal text-white/90"
-        >Tu Restaurante Ecuatoriano en Valencia</span
+        >{t("hero.subtitle")}</span
       >
     </h1>
     <p
@@ -57,13 +82,13 @@ const data = {
         target="_blank"
         class="glass px-8 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition duration-300 border border-white/20 backdrop-blur-md"
       >
-        Cómo llegar
+        {t("hero.get-there")}
       </a>
       <a
-        href="/carta"
+        href={translatePath("/carta")}
         class="bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-amber-600 transition duration-300 shadow-lg shadow-amber-900/50"
       >
-        Ver Carta
+        {t("hero.view-menu")}
       </a>
     </div>
   </div>

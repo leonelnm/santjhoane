@@ -11,10 +11,12 @@ const descripcionDefault =
   "Descubre Restaurante Sant Jhoan'e, conocido también como San Joan, un lugar para disfrutar de la mejor comida ecuatoriana en Valencia.";
 
 const { title, description = descripcionDefault } = Astro.props as Props;
+
+const lang = Astro.currentLocale ?? "es";
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />

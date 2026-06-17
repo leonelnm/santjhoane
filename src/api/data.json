@@ -1136,7 +1136,9 @@
       "es": [
         "leche"
       ],
-      "en": []
+      "en": [
+        "milk"
+      ]
     },
     "availableDays": []
   },
@@ -1155,7 +1157,9 @@
       "es": [
         "agua"
       ],
-      "en": []
+      "en": [
+        "water"
+      ]
     },
     "availableDays": []
   },
@@ -1473,7 +1477,9 @@
       "es": [
         "leche"
       ],
-      "en": []
+      "en": [
+        "milk"
+      ]
     },
     "availableDays": []
   },
@@ -1492,7 +1498,9 @@
       "es": [
         "agua"
       ],
-      "en": []
+      "en": [
+        "water"
+      ]
     },
     "availableDays": []
   },
@@ -1775,7 +1783,9 @@
       "es": [
         "leche"
       ],
-      "en": []
+      "en": [
+        "milk"
+      ]
     },
     "availableDays": []
   },
@@ -1794,7 +1804,9 @@
       "es": [
         "agua"
       ],
-      "en": []
+      "en": [
+        "water"
+      ]
     },
     "availableDays": []
   },
@@ -2222,23 +2234,6 @@
       "saturday",
       "sunday"
     ]
-  },
-  {
-    "id": "sandwich-mixto",
-    "category": [
-      "breakfast"
-    ],
-    "isFeatured": false,
-    "name": {
-      "es": "Sandwich mixto",
-      "en": "Mixed Sandwich"
-    },
-    "price": 3.5,
-    "ingredients": {
-      "es": [],
-      "en": []
-    },
-    "availableDays": []
   },
   {
     "id": "sangria",

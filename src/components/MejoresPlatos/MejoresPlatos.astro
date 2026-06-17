@@ -1,18 +1,22 @@
 ---
+import { useTranslatedPath, useTranslations } from "../../i18n/utils";
 import { getFeaturedPlatos } from "../../api/platos";
 
-const platos = await getFeaturedPlatos("es");
+const lang = Astro.currentLocale ?? "es";
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const platos = await getFeaturedPlatos(lang as Lang);
 ---
 
 <section class="py-20 px-4 max-w-7xl mx-auto">
   <div class="mb-12 text-center">
     <h2 class="text-4xl md:text-5xl font-bold text-white font-['Syne'] mb-4">
-      Nuestros Platos <span
-        class="text-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]"
-        >Destacados</span
+      {t("featured.title")}
+      <span class="text-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]"
+        >{t("featured.highlight")}</span
       >
     </h2>
-    <p class="text-gray-400 mt-4 md:hidden">Desliza para descubrir más</p>
+    <p class="text-gray-400 mt-4 md:hidden">{t("featured.swipe-hint")}</p>
   </div>
 
   <div
@@ -28,7 +32,7 @@ const platos = await getFeaturedPlatos("es");
               <img
                 loading="lazy"
                 src={featuredImg}
-                alt={`Imagen de ${dish.name}`}
+                alt={t("featured.img-alt").replace("{name}", dish.name)}
                 class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700"
               />
               <div class="absolute bottom-0 left-0 p-6 z-20">
@@ -48,10 +52,10 @@ const platos = await getFeaturedPlatos("es");
 
   <section class="text-center mt-16">
     <a
-      href="/carta"
+      href={translatePath("/carta")}
       class="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg shadow-amber-900/30 transition duration-300"
     >
-      <span>Ver toda la carta</span>
+      <span>{t("featured.view-all")}</span>
       <svg
         class="w-5 h-5"
         fill="none"

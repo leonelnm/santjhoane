@@ -3,17 +3,19 @@ import Location from "../icons/Location.astro";
 import PhoneCall from "../icons/PhoneCall.astro";
 import Instagram from "../icons/instagram.astro";
 import Facebook from "../icons/Facebook.astro";
+import { useTranslations } from "../i18n/utils";
+
+const t = useTranslations(Astro.currentLocale ?? "es");
 ---
 
 <section class="mt-20 relative overflow-hidden">
   <div class="absolute inset-0 bg-amber-900/10 blur-3xl"></div>
   <div class="py-20 px-4 max-w-4xl mx-auto relative z-10">
     <h2 class="text-4xl font-bold mb-4 text-white font-['Syne'] text-center">
-      Contáctanos
+      {t("contact.title")}
     </h2>
     <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-      Bienvenido a Sant Jhoan'e, su restaurante ecuatoriano en Valencia. También
-      conocido como Sant Joan o San Joan.
+      {t("contact.subtitle")}
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <a
@@ -28,8 +30,8 @@ import Facebook from "../icons/Facebook.astro";
           <Location />
         </div>
         <div>
-          <h3 class="text-lg font-bold text-white">Dónde estamos</h3>
-          <p class="text-gray-400">Calle Sapadores, 45, Valencia</p>
+          <h3 class="text-lg font-bold text-white">{t("contact.location")}</h3>
+          <p class="text-gray-400">{t("contact.address")}</p>
         </div>
       </a>
 
@@ -43,8 +45,8 @@ import Facebook from "../icons/Facebook.astro";
           <PhoneCall />
         </div>
         <div>
-          <h3 class="text-lg font-bold text-white">Llámanos</h3>
-          <p class="text-gray-400">+34 960 151 265</p>
+          <h3 class="text-lg font-bold text-white">{t("contact.call")}</h3>
+          <p class="text-gray-400">{t("contact.phone")}</p>
         </div>
       </a>
 
