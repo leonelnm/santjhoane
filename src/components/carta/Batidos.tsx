@@ -1,3 +1,5 @@
+import { useTranslations } from "../../i18n/utils";
+
 interface Variante {
     ingredientes?: string;
     precio: string;
@@ -11,9 +13,8 @@ interface BatidoTransformado {
 }
 
 export default function Batidos({ batidos, lang }: { batidos: DishView[], lang: Lang }) {
+    const t = useTranslations(lang);
     const batidosTransformados: BatidoTransformado[] = [];
-    const imgAlt = lang === 'en' ? 'Image of ' : 'Imagen de ';
-    const nameAria = lang === 'en' ? 'Smoothie name: ' : 'Nombre del batido: ';
 
     batidos.forEach(batido => {
         const existente = batidosTransformados.find(item => item.nombre === batido.name);
@@ -45,7 +46,7 @@ export default function Batidos({ batidos, lang }: { batidos: DishView[], lang: 
                                 <img
                                     class="w-full h-full object-cover"
                                     src={batido.img.url}
-                                    alt={imgAlt + batido.nombre}
+                                    alt={t("dish.img-alt").replace("{name}", batido.nombre)}
                                     loading="lazy"
                                 />
                             </figure>
@@ -54,7 +55,7 @@ export default function Batidos({ batidos, lang }: { batidos: DishView[], lang: 
 
                     <section class="p-4 flex-1 space-y-2">
                         <header class="flex justify-between items-center gap-2">
-                            <h2 class="text-base font-bold leading-tight text-white font-['Syne']" aria-label={nameAria + batido.nombre}>{batido.nombre}</h2>
+                            <h2 class="text-base font-bold leading-tight text-white font-['Syne']" aria-label={t("batido.name-aria").replace("{name}", batido.nombre)}>{batido.nombre}</h2>
                             <div class={"flex flex-col gap-1"}>
                                 {batido.variantes.map(({ ingredientes }) => (
                                     <div class="flex gap-3 items-center justify-end">

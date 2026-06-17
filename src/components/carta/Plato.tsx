@@ -1,7 +1,10 @@
+import { useTranslations } from "../../i18n/utils";
+
 export default function Plato({ plato, includePrices = false, lang }: { plato: DishView, includePrices?: boolean, lang: Lang }) {
-    const imgAlt = lang === 'en' ? `Image of ${plato.name}` : `Imagen de ${plato.name}`;
-    const nameAria = lang === 'en' ? `Dish name: ${plato.name}` : `Nombre del plato: ${plato.name}`;
-    const ingredientsAria = lang === 'en' ? `Dish ingredients: ${plato.ingredients}` : `Ingredientes del plato: ${plato.ingredients}`;
+    const t = useTranslations(lang);
+    const imgAlt = t("dish.img-alt").replace("{name}", plato.name);
+    const nameAria = t("dish.name-aria").replace("{name}", plato.name);
+    const ingredientsAria = t("dish.ingredients-aria").replace("{ingredients}", plato.ingredients ?? "");
 
     return (
         <article class="rounded-2xl glass border border-white/5 overflow-hidden hover:bg-white/5 transition-all duration-300 group">

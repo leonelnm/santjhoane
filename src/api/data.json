@@ -58,7 +58,7 @@
     "isFeatured": false,
     "name": {
       "es": "Apanado",
-      "en": "Breaded Beef Cutlet"
+      "en": "Breaded Beef Cutlet (Apanado)"
     },
     "price": 9.5,
     "ingredients": {
@@ -72,7 +72,7 @@
       "en": [
         "Breaded beef",
         "rice",
-        "potatoes",
+        "french fries",
         "salad",
         "avocado"
       ]
@@ -123,7 +123,7 @@
       "en": [
         "Corn arepa",
         "chorizo",
-        "Latin cheese"
+        "Latin fresh cheese"
       ]
     },
     "availableDays": []
@@ -153,7 +153,7 @@
     "isFeatured": false,
     "name": {
       "es": "Arroz con camarones",
-      "en": "Shrimp Fried Rice"
+      "en": "Ecuadorian Shrimp Rice (Arroz con Camarones)"
     },
     "price": 14.5,
     "ingredients": {
@@ -163,7 +163,7 @@
         "maduro frito"
       ],
       "en": [
-        "Fried rice with shrimp",
+        "Ecuadorian-style shrimp rice",
         "vegetables",
         "fried sweet plantain"
       ]
@@ -203,12 +203,12 @@
       ],
       "en": [
         "Rice",
-        "beans (stew)",
-        "egg",
+        "red bean stew (menestra)",
+        "fried egg",
         "chorizo",
         "arepa",
-        "chicharrón (fried pork)",
-        "sweet plantain",
+        "crispy pork belly (chicharrón)",
+        "fried sweet plantain",
         "avocado"
       ]
     },
@@ -222,7 +222,7 @@
     "isFeatured": false,
     "name": {
       "es": "Bandera",
-      "en": "Bandera Platter"
+      "en": "Bandera (Ecuadorian Combo Platter)"
     },
     "price": 13.5,
     "ingredients": {
@@ -234,9 +234,9 @@
       ],
       "en": [
         "Rice",
-        "guatita",
-        "ceviche",
-        "braised beef"
+        "guatita (tripe stew)",
+        "shrimp ceviche",
+        "braised beef stew"
       ]
     },
     "availableDays": [
@@ -259,7 +259,7 @@
     "isFeatured": false,
     "name": {
       "es": "Bandera completa",
-      "en": "Full Bandera Platter"
+      "en": "Full Bandera (Ecuadorian Combo Platter)"
     },
     "price": 16.5,
     "ingredients": {
@@ -272,10 +272,10 @@
       ],
       "en": [
         "Rice",
-        "guatita",
-        "ceviche",
-        "braised beef",
-        "encebollado"
+        "guatita (tripe stew)",
+        "shrimp ceviche",
+        "braised beef stew",
+        "encebollado (fish soup)"
       ]
     },
     "availableDays": [
@@ -297,7 +297,7 @@
     "isFeatured": false,
     "name": {
       "es": "Bolón de verde con huevo frito",
-      "en": "Green Plantain Ball with Fried Egg"
+      "en": "Bolón de Verde (Green Plantain Dumpling) with Fried Egg"
     },
     "price": 5.5,
     "ingredients": {
@@ -314,7 +314,7 @@
     "isFeatured": false,
     "name": {
       "es": "Bolón de verde con seco de carne y huevo frito",
-      "en": "Green Plantain Ball with Braised Beef and Fried Egg"
+      "en": "Bolón de Verde with Beef Stew (Seco de Carne) and Fried Egg"
     },
     "price": 9.5,
     "ingredients": {
@@ -399,7 +399,7 @@
     "isFeatured": false,
     "name": {
       "es": "Caldo de bola",
-      "en": "Stuffed Plantain Soup"
+      "en": "Caldo de Bola (Stuffed Green Plantain Dumpling Soup)"
     },
     "price": 11,
     "ingredients": {
@@ -413,10 +413,10 @@
       ],
       "en": [
         "Beef",
-        "green plantain ball",
-        "yuca",
+        "stuffed green plantain dumpling",
+        "yuca (cassava)",
         "cabbage",
-        "corn",
+        "large-kernel corn (choclo)",
         "green plantain"
       ]
     },
@@ -433,7 +433,7 @@
     "isFeatured": false,
     "name": {
       "es": "Calentado de frijoles con carne",
-      "en": "Warm Bean Bowl with Beef"
+      "en": "Calentado (Rice and Bean Mix) with Beef"
     },
     "price": 7,
     "ingredients": {
@@ -450,7 +450,7 @@
     "isFeatured": false,
     "name": {
       "es": "Calentado de frijoles con huevo frito",
-      "en": "Warm Bean Bowl with Fried Egg"
+      "en": "Calentado (Rice and Bean Mix) with Fried Egg"
     },
     "price": 5.5,
     "ingredients": {
@@ -468,7 +468,7 @@
     "isFeatured": false,
     "name": {
       "es": "Camarones apanados",
-      "en": "Breaded Shrimp"
+      "en": "Breaded Shrimp (Camarones Apanados)"
     },
     "price": 13.5,
     "ingredients": {
@@ -617,7 +617,7 @@
     "isFeatured": false,
     "name": {
       "es": "Ceviche",
-      "en": "Ceviche"
+      "en": "Ecuadorian Shrimp Ceviche"
     },
     "price": 10,
     "ingredients": {
@@ -633,7 +633,7 @@
         "tomato",
         "onion",
         "lime",
-        "green plantain chips"
+        "thin green plantain chips (chifles)"
       ]
     },
     "availableDays": [
@@ -656,7 +656,7 @@
     "isFeatured": false,
     "name": {
       "es": "Chaulafán (Arroz chino)",
-      "en": "Chaulafan (Ecuadorian Fried Rice)"
+      "en": "Chaulafán (Ecuadorian Fried Rice)"
     },
     "price": 14.5,
     "ingredients": {
@@ -674,7 +674,7 @@
         "chicken",
         "shrimp",
         "vegetables",
-        "sweet plantain"
+        "fried sweet plantain"
       ]
     },
     "availableDays": [
@@ -690,7 +690,7 @@
     "isFeatured": false,
     "name": {
       "es": "Choclo con queso",
-      "en": "Corn on the Cob with Cheese"
+      "en": "Choclo con Queso (Andean Corn with Cheese)"
     },
     "price": 6.5,
     "ingredients": {
@@ -699,8 +699,8 @@
         "queso latino"
       ],
       "en": [
-        "Corn on the cob",
-        "Latin cheese"
+        "Andean corn on the cob",
+        "Latin fresh cheese"
       ]
     },
     "availableDays": []
@@ -713,7 +713,7 @@
     "isFeatured": false,
     "name": {
       "es": "Churrasco",
-      "en": "Churrasco Steak"
+      "en": "Churrasco (Ecuadorian-style Steak Platter)"
     },
     "price": 9.5,
     "ingredients": {
@@ -728,7 +728,7 @@
       "en": [
         "Grilled beef steak",
         "rice",
-        "potato",
+        "french fries",
         "fried egg",
         "salad",
         "avocado"
@@ -801,7 +801,7 @@
     "isFeatured": false,
     "name": {
       "es": "Dorada",
-      "en": "Fried Golden Snapper"
+      "en": "Fried Seabream (Dorada)"
     },
     "price": 14.5,
     "ingredients": {
@@ -812,9 +812,9 @@
         "ensalada"
       ],
       "en": [
-        "Fried golden snapper",
-        "green plantain chips",
-        "yuca",
+        "Fried seabream",
+        "fried green plantains (patacones)",
+        "yuca (cassava)",
         "salad"
       ]
     },
@@ -834,7 +834,7 @@
     "isFeatured": false,
     "name": {
       "es": "Dorada con arroz",
-      "en": "Golden Snapper with Rice"
+      "en": "Fried Seabream (Dorada) with Rice"
     },
     "price": 14.5,
     "ingredients": {
@@ -845,7 +845,7 @@
         "ensalada"
       ],
       "en": [
-        "Fried golden snapper",
+        "Fried seabream",
         "potatoes",
         "rice",
         "salad"
@@ -861,7 +861,7 @@
     "isFeatured": false,
     "name": {
       "es": "Dorada con menestra",
-      "en": "Golden Snapper with Bean Stew"
+      "en": "Fried Seabream (Dorada) with Bean Stew"
     },
     "price": 14.5,
     "ingredients": {
@@ -872,10 +872,10 @@
         "patacones"
       ],
       "en": [
-        "Fried golden snapper",
+        "Fried seabream",
         "rice",
-        "bean stew",
-        "green plantain chips"
+        "bean stew (menestra)",
+        "fried green plantains (patacones)"
       ]
     },
     "availableDays": []
@@ -905,7 +905,7 @@
     "isFeatured": true,
     "name": {
       "es": "Encebollado",
-      "en": "Encebollado (Ecuadorian Fish Soup)"
+      "en": "Encebollado (Ecuadorian Tuna & Yuca Soup)"
     },
     "price": 10,
     "ingredients": {
@@ -919,13 +919,13 @@
         "chifles"
       ],
       "en": [
-        "Fish",
-        "yuca",
-        "onion",
+        "Fish (albacore tuna)",
+        "yuca (cassava)",
+        "red onion",
         "tomato",
         "cilantro",
         "lime",
-        "green plantain chips"
+        "thin green plantain chips (chifles)"
       ]
     },
     "availableDays": [
@@ -952,7 +952,7 @@
     "isFeatured": false,
     "name": {
       "es": "Encebollado Mixto",
-      "en": "Mixed Encebollado"
+      "en": "Encebollado Mixto (Tuna & Shrimp Ceviche Soup)"
     },
     "price": 13.9,
     "ingredients": {
@@ -960,7 +960,7 @@
         "Encebollado con ceviche de camarón"
       ],
       "en": [
-        "Encebollado with shrimp ceviche"
+        "Encebollado soup topped with shrimp ceviche"
       ]
     },
     "availableDays": [
@@ -1034,7 +1034,7 @@
     "isFeatured": false,
     "name": {
       "es": "Fritada",
-      "en": "Fritada (Ecuadorian Pork Platter)"
+      "en": "Fritada (Ecuadorian Fried Pork Chunks)"
     },
     "price": 11.5,
     "ingredients": {
@@ -1046,8 +1046,8 @@
         "ensalada"
       ],
       "en": [
-        "Pork chunks",
-        "hominy corn",
+        "Fried pork chunks",
+        "hominy corn (mote)",
         "boiled potato",
         "fried sweet plantain",
         "salad"
@@ -1069,7 +1069,7 @@
     "isFeatured": false,
     "name": {
       "es": "Fritada completa",
-      "en": "Full Fritada Platter"
+      "en": "Fritada Completa (Full Ecuadorian Pork Platter)"
     },
     "price": 16.9,
     "ingredients": {
@@ -1084,12 +1084,12 @@
         "ensalada"
       ],
       "en": [
-        "Pork chunks",
-        "hominy corn",
+        "Fried pork chunks",
+        "hominy corn (mote)",
         "potato",
-        "cheese",
-        "corn",
-        "toasted corn",
+        "Latin fresh cheese",
+        "large-kernel corn (choclo)",
+        "toasted corn kernels (tostado)",
         "fried sweet plantain",
         "salad"
       ]
@@ -1104,7 +1104,7 @@
     "isFeatured": false,
     "name": {
       "es": "Fritada con choclo",
-      "en": "Fritada with Corn"
+      "en": "Fritada with Andean Corn"
     },
     "price": 10,
     "ingredients": {
@@ -1114,8 +1114,8 @@
         "ensalada"
       ],
       "en": [
-        "Fried pork",
-        "corn on the cob",
+        "Fried pork chunks (fritada)",
+        "Andean corn on the cob",
         "salad"
       ]
     },
@@ -1129,7 +1129,7 @@
     "isFeatured": false,
     "name": {
       "es": "Guanabana",
-      "en": "Soursop Smoothie"
+      "en": "Soursop (Guanábana) Smoothie (Milk-based)"
     },
     "price": 5.5,
     "ingredients": {
@@ -1150,7 +1150,7 @@
     "isFeatured": false,
     "name": {
       "es": "Guanabana",
-      "en": "Soursop Smoothie"
+      "en": "Soursop (Guanábana) Smoothie (Water-based)"
     },
     "price": 5,
     "ingredients": {
@@ -1171,7 +1171,7 @@
     "isFeatured": false,
     "name": {
       "es": "Guatita",
-      "en": "Guatita (Tripe Stew)"
+      "en": "Guatita (Ecuadorian Tripe Stew in Peanut Sauce)"
     },
     "price": 5.5,
     "ingredients": {
@@ -1191,7 +1191,7 @@
     "isFeatured": false,
     "name": {
       "es": "Guiso de ternera",
-      "en": "Beef Stew"
+      "en": "Braised Beef Stew (Guiso de Ternera)"
     },
     "price": 6.5,
     "ingredients": {
@@ -1229,7 +1229,7 @@
     "isFeatured": true,
     "name": {
       "es": "Hornado",
-      "en": "Hornado (Ecuadorian Roast Pork)"
+      "en": "Hornado (Ecuadorian Slow-Roasted Pork)"
     },
     "price": 12.9,
     "ingredients": {
@@ -1241,10 +1241,10 @@
         "ensalada"
       ],
       "en": [
-        "Roast pork",
+        "Slow-roasted pork",
         "boiled potato",
-        "sweet plantain",
-        "hominy corn",
+        "fried sweet plantain",
+        "hominy corn (mote)",
         "salad"
       ]
     },
@@ -1271,7 +1271,7 @@
     "isFeatured": true,
     "name": {
       "es": "Hornado con tortillas",
-      "en": "Hornado with Potato Patties"
+      "en": "Hornado con Llapingachos (Roast Pork with Potato Patties)"
     },
     "price": 14.9,
     "ingredients": {
@@ -1284,10 +1284,10 @@
         "aguacate"
       ],
       "en": [
-        "Roast pork",
-        "llapingachos",
-        "sweet plantain",
-        "hominy corn",
+        "Slow-roasted pork",
+        "cheese-stuffed potato patties (llapingachos)",
+        "fried sweet plantain",
+        "hominy corn (mote)",
         "salad",
         "avocado"
       ]
@@ -1315,7 +1315,7 @@
     "isFeatured": false,
     "name": {
       "es": "Humita",
-      "en": "Humita (Sweet Corn Tamale)"
+      "en": "Humita (Steamed Fresh Corn Cake)"
     },
     "price": 2,
     "ingredients": {
@@ -1349,7 +1349,7 @@
     "isFeatured": true,
     "name": {
       "es": "Llapingacho",
-      "en": "Llapingacho"
+      "en": "Llapingacho Platter (Cheese-Stuffed Potato Patties)"
     },
     "price": 14.5,
     "ingredients": {
@@ -1363,9 +1363,9 @@
         "ensalada"
       ],
       "en": [
-        "Llapingachos",
+        "Cheese-stuffed potato patties (llapingachos)",
         "chorizo",
-        "beef",
+        "grilled beef",
         "peanut sauce",
         "fried egg",
         "avocado",
@@ -1395,20 +1395,12 @@
     "isFeatured": false,
     "name": {
       "es": "Llapingacho",
-      "en": "Llapingacho"
+      "en": "Llapingacho (Cheese-Stuffed Potato Patty)"
     },
     "price": 5,
     "ingredients": {
       "es": [],
-      "en": [
-        "Llapingachos",
-        "chorizo",
-        "beef",
-        "peanut sauce",
-        "fried egg",
-        "avocado",
-        "salad"
-      ]
+      "en": []
     },
     "availableDays": [
       "saturday",
@@ -1451,7 +1443,7 @@
       ],
       "en": [
         "Fried sweet plantain",
-        "Latin cheese"
+        "Latin fresh cheese"
       ]
     },
     "availableDays": [],
@@ -1470,7 +1462,7 @@
     "isFeatured": false,
     "name": {
       "es": "Mango",
-      "en": "Mango Smoothie"
+      "en": "Mango Smoothie (Milk-based)"
     },
     "price": 4.5,
     "ingredients": {
@@ -1491,7 +1483,7 @@
     "isFeatured": false,
     "name": {
       "es": "Mango",
-      "en": "Mango Smoothie"
+      "en": "Mango Smoothie (Water-based)"
     },
     "price": 4,
     "ingredients": {
@@ -1525,8 +1517,8 @@
       "en": [
         "Breaded beef",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1552,8 +1544,8 @@
       "en": [
         "Breaded shrimp",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": [],
@@ -1572,7 +1564,7 @@
     "isFeatured": false,
     "name": {
       "es": "Menestra con carne",
-      "en": "Beef with Bean Stew"
+      "en": "Grilled Beef with Bean Stew"
     },
     "price": 9.5,
     "ingredients": {
@@ -1585,8 +1577,8 @@
       "en": [
         "Grilled beef",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1614,8 +1606,8 @@
         "Criollo chorizo",
         "rice",
         "fried eggs",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1639,10 +1631,10 @@
         "menestra"
       ],
       "en": [
-        "Fritada",
+        "Fried pork chunks (fritada)",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1666,10 +1658,10 @@
         "menestra"
       ],
       "en": [
-        "Hornado",
+        "Slow-roasted pork (hornado)",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": [],
@@ -1688,7 +1680,7 @@
     "isFeatured": false,
     "name": {
       "es": "Menestra con lomo",
-      "en": "Pork Loin with Bean Stew"
+      "en": "Pork Chop with Bean Stew"
     },
     "price": 9,
     "ingredients": {
@@ -1701,8 +1693,8 @@
       "en": [
         "Pork chop",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1728,8 +1720,8 @@
       "en": [
         "Grilled chicken breast",
         "rice",
-        "green plantain chips",
-        "bean stew"
+        "fried green plantains (patacones)",
+        "bean stew (menestra)"
       ]
     },
     "availableDays": []
@@ -1742,7 +1734,7 @@
     "isFeatured": false,
     "name": {
       "es": "Menestra de frijoles",
-      "en": "Bean Stew (Side)"
+      "en": "Menestra de Frijoles (Bean Stew Side)"
     },
     "price": 5,
     "ingredients": {
@@ -1759,7 +1751,7 @@
     "isFeatured": false,
     "name": {
       "es": "Milo",
-      "en": "Milo"
+      "en": "Milo (Chocolate Malt Beverage)"
     },
     "price": 2.6,
     "ingredients": {
@@ -1776,7 +1768,7 @@
     "isFeatured": false,
     "name": {
       "es": "Mora",
-      "en": "Blackberry Smoothie"
+      "en": "Blackberry Smoothie (Milk-based)"
     },
     "price": 4.5,
     "ingredients": {
@@ -1797,7 +1789,7 @@
     "isFeatured": false,
     "name": {
       "es": "Mora",
-      "en": "Blackberry Smoothie"
+      "en": "Blackberry Smoothie (Water-based)"
     },
     "price": 4,
     "ingredients": {
@@ -1836,7 +1828,7 @@
     "isFeatured": false,
     "name": {
       "es": "Mote con chicharrón",
-      "en": "Hominy Corn with Fried Pork"
+      "en": "Mote con Chicharrón (Hominy with Pork belly)"
     },
     "price": 7.5,
     "ingredients": {
@@ -1847,7 +1839,7 @@
       ],
       "en": [
         "Criollo chorizo",
-        "hominy corn",
+        "hominy corn (mote)",
         "salad"
       ]
     },
@@ -1885,7 +1877,7 @@
     "isFeatured": false,
     "name": {
       "es": "Papas con huevo",
-      "en": "Fries with Egg"
+      "en": "French Fries with Fried Egg"
     },
     "price": 4.9,
     "ingredients": {
@@ -1913,7 +1905,7 @@
     "isFeatured": false,
     "name": {
       "es": "Papas con todo",
-      "en": "Loaded Fries"
+      "en": "Loaded French Fries (Papas con Todo)"
     },
     "price": 8.5,
     "ingredients": {
@@ -1927,7 +1919,7 @@
       ],
       "en": [
         "French fries",
-        "sausages",
+        "sliced sausages",
         "beef",
         "fried egg",
         "ketchup",
@@ -1945,7 +1937,7 @@
     "isFeatured": false,
     "name": {
       "es": "Papi carne",
-      "en": "Beef Fries"
+      "en": "Papi Carne (French Fries with Beef)"
     },
     "price": 6.5,
     "ingredients": {
@@ -1972,7 +1964,7 @@
     "isFeatured": false,
     "name": {
       "es": "Papi pollo",
-      "en": "Chicken Fries"
+      "en": "Papi Pollo (French Fries with Chicken)"
     },
     "price": 6.5,
     "ingredients": {
@@ -2005,7 +1997,7 @@
     "isFeatured": false,
     "name": {
       "es": "Patacón",
-      "en": "Green Plantain Chips"
+      "en": "Fried Green Plantains (Patacones)"
     },
     "price": 4.5,
     "ingredients": {
@@ -2022,7 +2014,7 @@
     "isFeatured": false,
     "name": {
       "es": "Patacón con queso",
-      "en": "Green Plantain Chips with Cheese"
+      "en": "Fried Green Plantains with Cheese"
     },
     "price": 6.5,
     "ingredients": {
@@ -2031,8 +2023,8 @@
         "queso latino"
       ],
       "en": [
-        "Green plantain chips",
-        "Latin cheese"
+        "Fried green plantains",
+        "Latin fresh cheese"
       ]
     },
     "availableDays": [],
@@ -2069,7 +2061,7 @@
     "isFeatured": false,
     "name": {
       "es": "Picada",
-      "en": "Mixed Platter"
+      "en": "Picada (Ecuadorian Mixed Platter)"
     },
     "price": 15.5,
     "ingredients": {
@@ -2082,10 +2074,10 @@
       ],
       "en": [
         "White and red chorizo",
-        "yuca",
-        "pork",
+        "yuca (cassava)",
+        "fried pork chunks",
         "chicken wings",
-        "sweet plantain"
+        "fried sweet plantain"
       ]
     },
     "availableDays": []
@@ -2099,7 +2091,7 @@
     "isFeatured": false,
     "name": {
       "es": "Plato combinado",
-      "en": "Mixed Plate"
+      "en": "Plato Combinado (Ecuadorian Combo Plate)"
     },
     "price": 11.5,
     "ingredients": {
@@ -2112,9 +2104,9 @@
       ],
       "en": [
         "Beef",
-        "chicharrón",
-        "green plantain chips",
-        "cheese",
+        "crispy pork belly (chicharrón)",
+        "fried green plantains (patacones)",
+        "Latin cheese",
         "salad"
       ]
     },
@@ -2134,7 +2126,7 @@
     "isFeatured": false,
     "name": {
       "es": "Ponny Malta",
-      "en": "Pony Malta (Malt Drink)"
+      "en": "Pony Malta (Ecuadorian Malt Beverage)"
     },
     "price": 2.2,
     "ingredients": {
@@ -2151,7 +2143,7 @@
     "isFeatured": false,
     "name": {
       "es": "Postobón (uva - manzana) peq",
-      "en": "Postobón (grape - apple) small"
+      "en": "Postobón Soda (Grape or Apple)"
     },
     "price": 2,
     "ingredients": {
@@ -2168,7 +2160,7 @@
     "isFeatured": false,
     "name": {
       "es": "Queso",
-      "en": "Cheese (Side)"
+      "en": "Latin Fresh Cheese (Side)"
     },
     "price": 4.5,
     "ingredients": {
@@ -2186,7 +2178,7 @@
     "isFeatured": false,
     "name": {
       "es": "Salchipapa",
-      "en": "Salchipapa (Sausage and Fries)"
+      "en": "Salchipapa (French Fries with Sausage)"
     },
     "price": 4.9,
     "ingredients": {
@@ -2198,7 +2190,7 @@
       ],
       "en": [
         "French fries",
-        "sausages",
+        "sliced sausages",
         "ketchup",
         "mayonnaise"
       ]
@@ -2213,7 +2205,7 @@
     "isFeatured": false,
     "name": {
       "es": "Sancocho de costilla",
-      "en": "Beef Rib Sancocho"
+      "en": "Sancocho de Costilla (Ecuadorian Beef Rib Soup)"
     },
     "price": 9,
     "ingredients": {
@@ -2224,9 +2216,9 @@
         "plátano verde"
       ],
       "en": [
-        "Beef",
-        "yuca",
-        "corn",
+        "Beef rib",
+        "yuca (cassava)",
+        "large-kernel corn (choclo)",
         "green plantain"
       ]
     },
@@ -2260,7 +2252,7 @@
     "isFeatured": false,
     "name": {
       "es": "Seco de carne",
-      "en": "Braised Beef Seco"
+      "en": "Seco de Carne (Ecuadorian Beef Stew)"
     },
     "price": 9,
     "ingredients": {
@@ -2271,9 +2263,9 @@
         "aguacate"
       ],
       "en": [
-        "Braised beef",
+        "Braised beef stew",
         "rice",
-        "sweet plantain",
+        "fried sweet plantain",
         "avocado"
       ]
     },
@@ -2357,7 +2349,7 @@
     "isFeatured": false,
     "name": {
       "es": "Tigrillo con huevo frito",
-      "en": "Tigrillo with Fried Egg"
+      "en": "Tigrillo (Mashed Green Plantain with Cheese & Egg) with Fried Egg"
     },
     "price": 7.5,
     "ingredients": {
@@ -2397,7 +2389,7 @@
     "isFeatured": false,
     "name": {
       "es": "Tropical",
-      "en": "Tropical Soda"
+      "en": "Tropical (Ecuadorian Strawberry Soda)"
     },
     "price": 2,
     "ingredients": {
@@ -2414,7 +2406,7 @@
     "isFeatured": false,
     "name": {
       "es": "Yuca",
-      "en": "Yuca (Side)"
+      "en": "Fried or Boiled Yuca (Side)"
     },
     "price": 5.5,
     "ingredients": {

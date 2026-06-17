@@ -28,7 +28,8 @@ export default function MenuSection({ products, title, lang }: { products: DishV
 }
 
 function CategoriaPlatos({ categoria, platos, lang }: { categoria: string, platos: DishView[], lang: Lang }) {
-    const smoothiesLabel = lang === 'en' ? 'Smoothies/Juices' : 'Batidos/Jugos';
+    const categorias = getCategorias(lang);
+    const smoothiesLabel = categorias.get('smoothies') ?? '';
 
     return (
         <section class="flex flex-col gap-4">
