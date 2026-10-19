@@ -13,7 +13,7 @@ const faqData: Record<Lang, FAQItem[]> = {
     {
       question: "¿Cuál es el horario de apertura?",
       answer:
-        "Abrimos de lunes a sábado de 09:00 a 21:15, y los domingos y festivos de 09:00 a 19:15. Ofrecemos servicio continuo durante todo el día.",
+        "Abrimos de lunes a jueves de 09:00 a 17:00, los viernes y sábados de 09:00 a 21:00, y los domingos y festivos de 09:00 a 19:00. Ofrecemos servicio continuo durante todo el día.",
     },
     {
       question: "¿Qué tipo de cocina ofrecen?",
@@ -50,7 +50,7 @@ const faqData: Record<Lang, FAQItem[]> = {
     {
       question: "What are your opening hours?",
       answer:
-        "We are open Monday to Saturday from 09:00 to 21:15, and Sundays and holidays from 09:00 to 19:15. We offer continuous service throughout the day.",
+        "We are open Monday to Thursday from 09:00 to 17:00, Fridays and Saturdays from 09:00 to 21:00, and Sundays and holidays from 09:00 to 19:00. We offer continuous service throughout the day.",
     },
     {
       question: "What type of cuisine do you serve?",
@@ -85,5 +85,4 @@ export const faqList: FAQItem[] = faqData.es;
 export function getFaqList(lang: Lang = "es"): FAQItem[] {
   return faqData[lang];
 }
-
 
