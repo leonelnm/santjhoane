@@ -48,8 +48,8 @@ export const ui = {
     "faq.subtitle": "Todo lo que necesitas saber sobre Sant Jhoan'e",
 
     "footer.brand": "Restaurante Sant Jhoane",
-    "footer.copyright": "© {year} Todos los derechos reservados.",
-    "footer.copyright-menu": "© {year} Restaurante Sant Jhoane.",
+    "footer.copyright": "Todos los derechos reservados.",
+    "footer.copyright-menu": "Restaurante Sant Jhoane.",
 
     "featured.title": "Nuestros Platos",
     "featured.highlight": "Destacados",
@@ -119,8 +119,8 @@ export const ui = {
     "faq.subtitle": "Everything you need to know about Sant Jhoan'e",
 
     "footer.brand": "Restaurant Sant Jhoane",
-    "footer.copyright": "© {year} All rights reserved.",
-    "footer.copyright-menu": "© {year} Restaurant Sant Jhoane.",
+    "footer.copyright": "All rights reserved.",
+    "footer.copyright-menu": "Restaurant Sant Jhoane.",
 
     "featured.title": "Our",
     "featured.highlight": "Featured Dishes",
